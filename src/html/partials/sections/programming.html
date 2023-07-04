@@ -1,0 +1,24 @@
+{% set section = programming %}
+
+<section class="{{section.id}} section">
+  <div class="container">
+    <h2
+      class="section-title mx-auto mb-[18px] max-w-[280px] md:mb-10 md:max-w-[497px] xl:mb-[70px] xl:max-w-[867px]"
+    >
+      {{section.title}}
+    </h2>
+
+    <ul
+      class="gap-y-5 text-sm leading-[1.3] md:grid md:grid-cols-3 md:gap-x-4 md:text-xs xl:gap-x-7"
+    >
+      {% for item in section.list %}
+
+      <li
+        class="programming-item flex h-[68px] items-center pl-[82px] last:mb-0 md:h-[60px] md:pl-[76px] xl:h-[123px] xl:pl-[152px] xl:text-xl smOnly:mb-5"
+      >
+        {{item}}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
