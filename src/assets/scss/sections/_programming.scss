@@ -1,0 +1,191 @@
+.programming-item {
+  position: relative;
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    left: 0;
+
+    width: 68px;
+    height: 68px;
+  }
+
+  @include mq(tablet) {
+    &::before {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  @include mq(desktop) {
+    &::before {
+      width: 123px;
+      height: 123px;
+    }
+  }
+
+  &:nth-child(1) {
+    &::before {
+      background-image: url(../images/programming/programming-1_1.svg);
+    }
+
+    &::after {
+      left: 12px;
+
+      width: 44px;
+      height: 44px;
+
+      background-image: url(../images/programming/programming-1_2.png);
+      @include mq(retina) {
+        background-image: url(../images/programming/programming-1_2@2x.png);
+      }
+      @supports (background-image: url(../images/programming/programming-1_2.webp)) {
+        background-image: url(../images/programming/programming-1_2.webp);
+        @include mq(retina) {
+          background-image: url(../images/programming/programming-1_2@2x.webp);
+        }
+      }
+    }
+    @include mq(tablet) {
+      &::after {
+        left: 11px;
+
+        width: 38px;
+        height: 38px;
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 22px;
+
+        width: 79px;
+        height: 79px;
+
+        background-image: url(../images/programming/programming-1_2-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/programming/programming-1_2-desk@2x.png);
+        }
+        @supports (background-image: url(../images/programming/programming-1_2-desk.webp)) {
+          background-image: url(../images/programming/programming-1_2-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/programming/programming-1_2-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      background-image: url(../images/programming/programming-2_1.svg);
+    }
+
+    &::after {
+      left: 11px;
+
+      width: 46px;
+      height: 46px;
+
+      background-image: url(../images/programming/programming-2_2.png);
+      @include mq(retina) {
+        background-image: url(../images/programming/programming-2_2@2x.png);
+      }
+      @supports (background-image: url(../images/programming/programming-2_2.webp)) {
+        background-image: url(../images/programming/programming-2_2.webp);
+        @include mq(retina) {
+          background-image: url(../images/programming/programming-2_2@2x.webp);
+        }
+      }
+    }
+
+    @include mq(tablet) {
+      &::after {
+        left: 9.5px;
+
+        width: 41px;
+        height: 41px;
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 19px;
+
+        width: 84px;
+        height: 84px;
+
+        background-image: url(../images/programming/programming-2_2-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/programming/programming-2_2-desk@2x.png);
+        }
+        @supports (background-image: url(../images/programming/programming-2_2-desk.webp)) {
+          background-image: url(../images/programming/programming-2_2-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/programming/programming-2_2-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      background-image: url(../images/programming/programming-3_1.svg);
+    }
+
+    &::after {
+      left: 10px;
+
+      width: 48px;
+      height: 48px;
+
+      background-image: url(../images/programming/programming-3_2.png);
+      @include mq(retina) {
+        background-image: url(../images/programming/programming-3_2@2x.png);
+      }
+      @supports (background-image: url(../images/programming/programming-3_2.webp)) {
+        background-image: url(../images/programming/programming-3_2.webp);
+        @include mq(retina) {
+          background-image: url(../images/programming/programming-3_2@2x.webp);
+        }
+      }
+    }
+    @include mq(tablet) {
+      &::after {
+        left: 9px;
+
+        width: 42px;
+        height: 42px;
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 18px;
+
+        width: 86px;
+        height: 86px;
+
+        background-image: url(../images/programming/programming-3_2-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/programming/programming-3_2-desk@2x.png);
+        }
+        @supports (background-image: url(../images/programming/programming-3_2-desk.webp)) {
+          background-image: url(../images/programming/programming-3_2-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/programming/programming-3_2-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+}
