@@ -34,6 +34,11 @@ module.exports = {
         body: '#ffffff', // class="bg-body"
         primary: '#000000',
         accent: '#4F8235', // class="bg-accent text-accent border-accent"
+        black: {
+          DEFAULT: '#000000', // class="bg-black text-black border-black"
+          light: '#202020', // class="bg-black-light text-black-light border-black-light"
+          dark: '#010101',
+        },
         green: {
           DEFAULT: '#8BDB62', // class="bg-green text-green border-green"
           hover: '#B9F19D', // class="bg-green-hover  text-green-hover border-green-hover"
@@ -41,10 +46,11 @@ module.exports = {
         },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
+          dark: '#fafafa', // class="bg-white-dark text-white-dark border-white-dark"
         },
         background: {
           green: '#A1CA6B', // class="bg-background-green text-background-green border-background-green"
-          orange: '#DB8C44',// class="bg-background-orange text-background-orange border-background-orange"
+          orange: '#DB8C44', // class="bg-background-orange text-background-orange border-background-orange"
         },
       },
       // CONTAINER
