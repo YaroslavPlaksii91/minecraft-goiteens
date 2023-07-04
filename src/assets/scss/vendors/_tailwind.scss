@@ -11,7 +11,7 @@
 }
 
 body {
-  @apply bg-body font-montserratAlternates text-primary;
+  @apply bg-body font-montserratAlternates font-normal text-primary;
 }
 
 .section {
@@ -19,11 +19,11 @@ body {
 }
 
 .section-title {
-  @apply text-center text-xl font-bold leading-[1.3] md:text-2xl xl:text-[40px];
+  @apply text-center text-xl font-bold leading-[1.3] md:text-[24px] xl:text-[40px];
 }
 
 .btn {
-  @apply flex items-center justify-center rounded-[36px] border-0 bg-green text-sm font-medium leading-[1.2] text-primary shadow-btn duration-300 hover:bg-green-hover focus:bg-accent xl:text-2xl;
+  @apply flex items-center justify-center rounded-[36px] border-0 bg-green text-sm font-medium leading-[1.2] text-primary shadow-btn duration-300 hover:bg-green-hover focus:bg-green-hover xl:text-2xl;
 }
 
 .visually-hidden {

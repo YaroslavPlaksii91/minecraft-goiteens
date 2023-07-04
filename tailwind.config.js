@@ -34,6 +34,11 @@ module.exports = {
         body: '#ffffff', // class="bg-body"
         primary: '#000000',
         accent: '#4F8235', // class="bg-accent text-accent border-accent"
+        black: {
+          DEFAULT: '#000000', // class="bg-black text-black border-black"
+          light: '#202020', // class="bg-black-light text-black-light border-black-light"
+          dark: '#010101',
+        },
         green: {
           DEFAULT: '#8BDB62', // class="bg-green text-green border-green"
           hover: '#B9F19D', // class="bg-green-hover  text-green-hover border-green-hover"

@@ -1,7 +1,13 @@
-{% extends 'layout.html' %} {% block content %} {% include 'sections/header.html' %}
+{% extends 'layout.html' %}
+{% block content %}
+{% include 'sections/header.html' %}
 
 <main>
-  <!--  -->
+
+  {% include 'sections/info.html' %}
+
+  {% include 'sections/programming.html' %}
 </main>
 
-{% include 'sections/footer.html' %} {% endblock %}
+{% include 'sections/footer.html' %}
+{% endblock %}
