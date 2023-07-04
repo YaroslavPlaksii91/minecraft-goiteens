@@ -39,12 +39,18 @@ module.exports = {
           hover: '#B9F19D', // class="bg-green-hover  text-green-hover border-green-hover"
           pressed: '#A0D387', // class="bg-green-pressed  text-green-pressed  border-green-pressed "
         },
+        black: {
+          DEFAULT: '#000000', // class="bg-black text-black border-black"
+          light: '#202020', // class="bg-black-light text-black-light border-black-light"
+          dark: '#010101',
+        },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
+          dark: '#fafafa', // class="bg-white-dark text-white-dark border-white-dark"
         },
         background: {
           green: '#A1CA6B', // class="bg-background-green text-background-green border-background-green"
-          orange: '#DB8C44',// class="bg-background-orange text-background-orange border-background-orange"
+          orange: '#DB8C44', // class="bg-background-orange text-background-orange border-background-orange"
         },
       },
       // CONTAINER

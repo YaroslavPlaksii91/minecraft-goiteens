@@ -1,36 +1,41 @@
 {% set section = header %}
-<header class="{{section.id}}">
+<header
+  class="{{section.id}} relative pt-[73px] pb-[304px] md:pt-[113px] md:pb-[175px] xl:pt-[158px] xl:pb-[215px]"
+>
   <div class="container">
-    <!-- HEADER -->
-    <div class="flex items-center justify-between bg-accent pt-2">
-      <!-- LOGO -->
-      <a href="{{page.canonical}}" aria-label="{{logo.link_logo_aria}}">
-        <svg width="100" height="30" aria-label="{{logo.logo_aria}}">
+    <!-- <div class="">
+      <a
+        class="block w-[150px] smOnly:mx-auto"
+        href="{{page.canonical}}"
+        aria-label="{{logo.link_logo_aria}}"
+      >
+        <svg width="150" height="46" aria-label="{{logo.logo_aria}}">
           <title>{{logo.logo_aria}}</title>
-          <use href="./assets/images/sprite.svg#logo"></use>
+          <use href="./assets/images/sprite.svg#logo-black"></use>
         </svg>
       </a>
-      <!--  END LOGO -->
-      <!-- NAV -->
-      <div class="flex items-center justify-center xl:gap-2">
-        <!-- nav-menu -->
-        {% include 'components/nav-menu.html' %}
-        <!-- mobile-menu (including nav-menu inside) -->
-        {% include 'components/mobile-menu.html' %}
-        <!-- button (optional) -->
-        <button class="btn border border-black p-2 notXl:hidden" type="button" data-modal-open>
-          Open modal
-        </button>
-      </div>
-      <!--  END NAV -->
-    </div>
-    <!--  END HEADER -->
-
-    <!-- HERO -->
-    <div class="mx-auto max-w-xs">
-      <!-- form outside modal (optional) -->
-      {% set formId = section.id %} {% include 'components/formFields.njk' %}
-    </div>
-    <!--  END HERO -->
+    </div> -->
+    <h1
+      class="mb-[14px] text-[22px] font-bold leading-[1.16] text-white md:mb-[17px] md:w-[527px] md:text-[32px] xl:w-[705px] xl:text-[46px]"
+    >
+      {{section.title}}
+    </h1>
+    <p
+      class="mb-[27px] text-base font-medium leading-[1.3] text-white md:mb-[62px] md:w-[434px] md:text-[20px] xl:mb-[60px] xl:w-[498px] xl:text-[24px]"
+    >
+      {{section.subtitle}}
+    </p>
+    <p
+      class="mb-[9px] text-[14px] font-bold leading-[1.16] text-white md:mb-[23px] md:w-[224px] md:text-lg xl:mb-8 xl:w-auto xl:text-[24px] mdOnly:leading-[1.3]"
+    >
+      {{section.text}}
+    </p>
+    <button
+      data-modal-open
+      type="button"
+      class="btn hero-btn h-10 w-[196px] md:h-[43px] md:w-[240px] md:text-[18px] xl:h-[72px] xl:w-[406px] xl:text-[30px]"
+    >
+      {{section.button}}
+    </button>
   </div>
 </header>
