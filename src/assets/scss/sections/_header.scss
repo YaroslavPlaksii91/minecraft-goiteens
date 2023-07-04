@@ -47,7 +47,7 @@
   }
 
   @include mq(desktop) {
-    background-size: 901px 709px, 100% 805px;
+    background-size: 901px 709px, 100% 100%;
     background-position: top 31px left calc((100vw - 1280px) / 2 + 419px), center;
 
     background-image: url(../images/hero/hero-boy-desk.png), url(../images/hero/hero-bg-desk.png);
