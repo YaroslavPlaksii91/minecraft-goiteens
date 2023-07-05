@@ -1,89 +1,9 @@
-.header {
-  background-repeat: no-repeat, no-repeat;
-  background-position: bottom 49px center, center;
-  background-size: 381px 291px, cover;
-  background-image: url(../images/hero/hero-boy-mob.png), url(../images/hero/hero-bg-mob.png);
-
-  @include mq(retina) {
-    background-image: url(../images/hero/hero-boy-mob@2x.png),
-      url(../images/hero/hero-bg-mob@2x.png);
-  }
-
-  @supports (
-    background-image: url(../images/hero/hero-boy-mob.webp),
-    url(../images/hero/hero-bg-mob.webp)
-  ) {
-    background-image: url(../images/hero/hero-boy-mob.webp), url(../images/hero/hero-bg-mob.webp);
-    @include mq(retina) {
-      background-image: url(../images/hero/hero-boy-mob@2x.webp),
-        url(../images/hero/hero-bg-mob@2x.webp);
-    }
-  }
+.logo {
+  width: 80px;
+  height: 20px;
 
   @include mq(tablet) {
-    background-size: 524px 413px, 47px 40px, 100% 642px;
-    background-position: bottom 25px left calc((100vw - 768px) / 2 + 189px),
-      top 123px left calc((100vw - 768px) / 2 + 598px), center;
-    background-image: url(../images/hero/hero-boy-tab.png), url(../images/hero/hero-box.png),
-      url(../images/hero/hero-bg-tab.png);
-
-    @include mq(retina) {
-      background-image: url(../images/hero/hero-boy-tab@2x.png), url(../images/hero/hero-box@2x.png),
-        url(../images/hero/hero-bg-tab@2x.png);
-    }
-
-    @supports (
-      background-image: url(../images/hero/hero-boy-tab.webp),
-      url(../images/hero/hero-box.webp),
-      url(../images/hero/hero-bg-tab.webp)
-    ) {
-      background-image: url(../images/hero/hero-boy-tab.webp), url(../images/hero/hero-box.webp),
-        url(../images/hero/hero-bg-tab.webp);
-      @include mq(retina) {
-        background-image: url(../images/hero/hero-boy-tab@2x.webp),
-          url(../images/hero/hero-box@2x.webp), url(../images/hero/hero-bg-tab@2x.webp);
-      }
-    }
+    width: 138px;
+    height: 36px;
   }
-
-  @include mq(desktop) {
-    background-size: 901px 709px, 100% 100%;
-    background-position: top 31px left calc((100vw - 1280px) / 2 + 419px), center;
-
-    background-image: url(../images/hero/hero-boy-desk.png), url(../images/hero/hero-bg-desk.png);
-
-    @include mq(retina) {
-      background-image: url(../images/hero/hero-boy-desk@2x.png),
-        url(../images/hero/hero-bg-desk@2x.png);
-    }
-
-    @supports (
-      background-image: url(../images/hero/hero-boy-desk.webp),
-      url(../images/hero/hero-bg-desk.webp)
-    ) {
-      background-image: url(../images/hero/hero-boy-desk.webp),
-        url(../images/hero/hero-bg-desk.webp);
-      @include mq(retina) {
-        background-image: url(../images/hero/hero-boy-desk@2x.webp),
-          url(../images/hero/hero-bg-desk@2x.webp);
-      }
-    }
-  }
-}
-
-.header::before {
-  @include mq(desktop) {
-    content: '';
-    position: absolute;
-    top: 250px;
-    left: calc((100vw - 1280px) / 2 - 69px);
-    width: 101px;
-    height: 241px;
-    background-image: url(../images/hero/line.svg);
-  }
-}
-
-.hero-btn {
-  border-radius: 22px;
-  box-shadow: 0px 4px 6px 0px rgba(0, 9, 40, 0.23);
 }
