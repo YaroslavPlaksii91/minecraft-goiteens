@@ -1,0 +1,78 @@
+{% set section = lesson %}
+
+<section class="{{section.id}} section">
+  <div class="container">
+    <div class="mb-[27px]">
+      <h2 class="section-title mb-4 !text-left md:mb-3 xl:mb-5">{{section.title}}</h2>
+      {% for item in section.text %}
+      <p class="mb-[10px] text-[14px] leading-[1.3] last:mb-0 md:text-[16px] xl:text-[20px]">
+        {{item}}
+      </p>
+      {% endfor %}
+    </div>
+    <div
+      class="h-[218px] w-[280px] md:h-[244px] md:w-[313px] xl:h-[426px] xl:w-[546px] smOnly:mx-auto"
+    >
+      <picture>
+        <source
+          srcset="
+            ./assets/images/lesson/{{section.id}}-desk.webp    1x,
+            ./assets/images/lesson/{{section.id}}-desk@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./assets/images/lesson/{{section.id}}-tab.webp    1x,
+            ./assets/images/lesson/{{section.id}}-tab@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./assets/images/lesson/{{section.id}}-mob.webp    1x,
+            ./assets/images/lesson/{{section.id}}-mob@2x.webp 2x
+          "
+          type="image/webp"
+          media="(max-width: 767.98px)"
+        />
+        <source
+          srcset="
+            ./assets/images/lesson/{{section.id}}-desk.png    1x,
+            ./assets/images/lesson/{{section.id}}-desk@2x.png 2x
+          "
+          type="image/png"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./assets/images/lesson/{{section.id}}-tab.png    1x,
+            ./assets/images/lesson/{{section.id}}-tab@2x.png 2x
+          "
+          type="image/png"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./assets/images/lesson/{{section.id}}-mob.png    1x,
+            ./assets/images/lesson/{{section.id}}-mob@2x.png 2x
+          "
+          type="image/png"
+          media="(max-width: 767.98px)"
+        />
+
+        <img
+          class="h-full w-full"
+          src="./assets/images/lesson/{{section.id}}-mob.png"
+          srcset="./assets/images/lesson/{{section.id}}-mob@2x.png 2x"
+          alt="{{section.imageAlt}}"
+          width="280"
+          height="218"
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
