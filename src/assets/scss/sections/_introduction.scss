@@ -1,0 +1,178 @@
+.introduction {
+  padding-bottom: 280px;
+  background-repeat: no-repeat;
+  background-position: bottom 34px center;
+  background-size: 251px 227px;
+  background-image: url(../images/introduction/introduction-bg-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/introduction/introduction-bg-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/introduction/introduction-bg-mob.webp)) {
+    background-image: url(../images/introduction/introduction-bg-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-bg-mob@2x.webp);
+    }
+  }
+
+  @include mq(tablet) {
+    padding-bottom: 40px;
+    background-size: 255px 231px;
+    background-position: bottom 61px left calc((100vw - 768px) / 2 + 410px);
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 231px;
+    background-size: 487px 440px;
+    background-position: bottom 170px left calc((100vw - 1280px) / 2 + 695px);
+
+    background-image: url(../images/introduction/introduction-bg-desk.png);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-bg-desk@2x.png);
+    }
+
+    @supports (background-image: url(../images/introduction/introduction-bg-desk.webp)) {
+      background-image: url(../images/introduction/introduction-bg-desk.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/introduction/introduction-bg-desk@2x.webp);
+      }
+    }
+  }
+}
+
+.introduction-title {
+  text-align: left;
+}
+
+.labelCard::before,
+.labelCard::after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.labelCard:before {
+  width: 74px;
+  height: 46px;
+  top: 16px;
+  left: 25px;
+  background-image: url(../images/introduction/introduction-boy-left-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/introduction/introduction-boy-left-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/introduction/introduction-boy-left-mob.webp)) {
+    background-image: url(../images/introduction/introduction-boy-left-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-boy-left-mob@2x.webp);
+    }
+  }
+
+  @include mq(tablet) {
+    width: 113px;
+    height: 72px;
+    top: 61px;
+    left: 31px;
+    background-image: url(../images/introduction/introduction-boy-left-tab.png);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-boy-left-tab@2x.png);
+    }
+
+    @supports (background-image: url(../images/introduction/introduction-boy-left-tab.webp)) {
+      background-image: url(../images/introduction/introduction-boy-left-tab.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/introduction/introduction-boy-left-tab@2x.webp);
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    width: 204px;
+    height: 129px;
+    top: 142px;
+    left: 56px;
+    background-image: url(../images/introduction/introduction-boy-left-desk.png);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-boy-left-desk@2x.png);
+    }
+
+    @supports (background-image: url(../images/introduction/introduction-boy-left-desk.webp)) {
+      background-image: url(../images/introduction/introduction-boy-left-desk.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/introduction/introduction-boy-left-desk@2x.webp);
+      }
+    }
+  }
+}
+
+.labelCard:after {
+  width: 60px;
+  height: 45px;
+  top: 17px;
+  right: 28px;
+  background-image: url(../images/introduction/introduction-boy-right-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/introduction/introduction-boy-right-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/introduction/introduction-boy-right-mob.webp)) {
+    background-image: url(../images/introduction/introduction-boy-right-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-boy-right-mob@2x.webp);
+    }
+  }
+
+  @include mq(tablet) {
+    width: 99px;
+    height: 74px;
+    top: 61px;
+    right: 29px;
+    background-image: url(../images/introduction/introduction-boy-right-tab.png);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-boy-right-tab@2x.png);
+    }
+
+    @supports (background-image: url(../images/introduction/introduction-boy-right-tab.webp)) {
+      background-image: url(../images/introduction/introduction-boy-right-tab.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/introduction/introduction-boy-right-tab@2x.webp);
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    width: 178px;
+    height: 133px;
+    top: 140px;
+    right: 56px;
+    background-image: url(../images/introduction/introduction-boy-right-desk.png);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-boy-right-desk@2x.png);
+    }
+
+    @supports (background-image: url(../images/introduction/introduction-boy-right-desk.webp)) {
+      background-image: url(../images/introduction/introduction-boy-right-desk.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/introduction/introduction-boy-right-desk@2x.webp);
+      }
+    }
+  }
+}
