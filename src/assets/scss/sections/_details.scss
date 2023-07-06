@@ -6,100 +6,205 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include mq(tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
-.details-item:nth-child(1) li:nth-child(1) .content::before {
-  background-image: url(../images/details/test-mob.png);
-
-  @include mq(retina) {
-    background-image: url(../images/details/test-mob@2x.png);
-  }
-
-  @supports (background-image: url(../images/details/test-mob.webp)) {
-    background-image: url(../images/details/test-mob.webp);
+.details-item:nth-child(1) {
+  li:nth-child(1) .content::before {
+    background-image: url(../images/details/test-mob.png);
 
     @include mq(retina) {
-      background-image: url(../images/details/test-mob@2x.webp);
+      background-image: url(../images/details/test-mob@2x.png);
+    }
+
+    @supports (background-image: url(../images/details/test-mob.webp)) {
+      background-image: url(../images/details/test-mob.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/details/test-mob@2x.webp);
+      }
+    }
+
+    @include mq(tablet) {
+      background-image: url(../images/details/test-tab.png);
+
+      @include mq(retina) {
+        background-image: url(../images/details/test-tab@2x.png);
+      }
+
+      @supports (background-image: url(../images/details/test-tab.webp)) {
+        background-image: url(../images/details/test-tab.webp);
+
+        @include mq(retina) {
+          background-image: url(../images/details/test-tab@2x.webp);
+        }
+      }
+    }
+  }
+
+  li:nth-child(2) .content::before {
+    background-image: url(../images/details/coding-mob.png);
+
+    @include mq(retina) {
+      background-image: url(../images/details/coding-mob@2x.png);
+    }
+
+    @supports (background-image: url(../images/details/coding-mob.webp)) {
+      background-image: url(../images/details/coding-mob.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/details/coding-mob@2x.webp);
+      }
+    }
+
+    @include mq(tablet) {
+      background-image: url(../images/details/coding-tab.png);
+
+      @include mq(retina) {
+        background-image: url(../images/details/coding-tab@2x.png);
+      }
+
+      @supports (background-image: url(../images/details/coding-tab.webp)) {
+        background-image: url(../images/details/coding-tab.webp);
+
+        @include mq(retina) {
+          background-image: url(../images/details/coding-tab@2x.webp);
+        }
+      }
+    }
+  }
+
+  li:nth-child(3) .content::before {
+    background-image: url(../images/details/consultant-mob.png);
+
+    @include mq(retina) {
+      background-image: url(../images/details/consultant-mob@2x.png);
+    }
+
+    @supports (background-image: url(../images/details/consultant-mob.webp)) {
+      background-image: url(../images/details/consultant-mob.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/details/consultant-mob@2x.webp);
+      }
+    }
+
+    @include mq(tablet) {
+      background-image: url(../images/details/consultant-tab.png);
+
+      @include mq(retina) {
+        background-image: url(../images/details/consultant-tab@2x.png);
+      }
+
+      @supports (background-image: url(../images/details/consultant-tab.webp)) {
+        background-image: url(../images/details/consultant-tab.webp);
+
+        @include mq(retina) {
+          background-image: url(../images/details/consultant-tab@2x.webp);
+        }
+      }
     }
   }
 }
 
-.details-item:nth-child(1) li:nth-child(2) .content::before {
-  background-image: url(../images/details/coding-mob.png);
-
-  @include mq(retina) {
-    background-image: url(../images/details/coding-mob@2x.png);
-  }
-
-  @supports (background-image: url(../images/details/coding-mob.webp)) {
-    background-image: url(../images/details/coding-mob.webp);
+.details-item:nth-child(2) {
+  li:nth-child(1) .content::before {
+    background-image: url(../images/details/dimensions-mob.png);
 
     @include mq(retina) {
-      background-image: url(../images/details/coding-mob@2x.webp);
+      background-image: url(../images/details/dimensions-mob@2x.png);
+    }
+
+    @supports (background-image: url(../images/details/dimensions-mob.webp)) {
+      background-image: url(../images/details/dimensions-mob.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/details/dimensions-mob@2x.webp);
+      }
+    }
+
+    @include mq(tablet) {
+      background-image: url(../images/details/dimensions-tab.png);
+
+      @include mq(retina) {
+        background-image: url(../images/details/dimensions-tab@2x.png);
+      }
+
+      @supports (background-image: url(../images/details/dimensions-tab.webp)) {
+        background-image: url(../images/details/dimensions-tab.webp);
+
+        @include mq(retina) {
+          background-image: url(../images/details/dimensions-tab@2x.webp);
+        }
+      }
     }
   }
-}
 
-.details-item:nth-child(1) li:nth-child(3) .content::before {
-  background-image: url(../images/details/consultant-mob.png);
-
-  @include mq(retina) {
-    background-image: url(../images/details/consultant-mob@2x.png);
-  }
-
-  @supports (background-image: url(../images/details/consultant-mob.webp)) {
-    background-image: url(../images/details/consultant-mob.webp);
+  li:nth-child(2) .content::before {
+    background-image: url(../images/details/computer-mob.png);
 
     @include mq(retina) {
-      background-image: url(../images/details/consultant-mob@2x.webp);
+      background-image: url(../images/details/computer-mob@2x.png);
+    }
+
+    @supports (background-image: url(../images/details/computer-mob.webp)) {
+      background-image: url(../images/details/computer-mob.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/details/computer-mob@2x.webp);
+      }
+    }
+
+    @include mq(tablet) {
+      background-image: url(../images/details/computer-tab.png);
+
+      @include mq(retina) {
+        background-image: url(../images/details/computer-tab@2x.png);
+      }
+
+      @supports (background-image: url(../images/details/computer-tab.webp)) {
+        background-image: url(../images/details/computer-tab.webp);
+
+        @include mq(retina) {
+          background-image: url(../images/details/computer-tab@2x.webp);
+        }
+      }
     }
   }
-}
 
-.details-item:nth-child(2) li:nth-child(1) .content::before {
-  background-image: url(../images/details/dimensions-mob.png);
-
-  @include mq(retina) {
-    background-image: url(../images/details/dimensions-mob@2x.png);
-  }
-
-  @supports (background-image: url(../images/details/dimensions-mob.webp)) {
-    background-image: url(../images/details/dimensions-mob.webp);
+  li:nth-child(3) .content::before {
+    background-image: url(../images/details/code-mob.png);
 
     @include mq(retina) {
-      background-image: url(../images/details/dimensions-mob@2x.webp);
+      background-image: url(../images/details/code-mob@2x.png);
     }
-  }
-}
 
-.details-item:nth-child(2) li:nth-child(2) .content::before {
-  background-image: url(../images/details/computer-mob.png);
+    @supports (background-image: url(../images/details/code-mob.webp)) {
+      background-image: url(../images/details/code-mob.webp);
 
-  @include mq(retina) {
-    background-image: url(../images/details/computer-mob@2x.png);
-  }
-
-  @supports (background-image: url(../images/details/computer-mob.webp)) {
-    background-image: url(../images/details/computer-mob.webp);
-
-    @include mq(retina) {
-      background-image: url(../images/details/computer-mob@2x.webp);
+      @include mq(retina) {
+        background-image: url(../images/details/code-mob@2x.webp);
+      }
     }
-  }
-}
 
-.details-item:nth-child(2) li:nth-child(3) .content::before {
-  background-image: url(../images/details/code-mob.png);
+    @include mq(tablet) {
+      background-image: url(../images/details/code-tab.png);
 
-  @include mq(retina) {
-    background-image: url(../images/details/code-mob@2x.png);
-  }
+      @include mq(retina) {
+        background-image: url(../images/details/code-tab@2x.png);
+      }
 
-  @supports (background-image: url(../images/details/code-mob.webp)) {
-    background-image: url(../images/details/code-mob.webp);
+      @supports (background-image: url(../images/details/code-tab.webp)) {
+        background-image: url(../images/details/code-tab.webp);
 
-    @include mq(retina) {
-      background-image: url(../images/details/code-mob@2x.webp);
+        @include mq(retina) {
+          background-image: url(../images/details/code-tab@2x.webp);
+        }
+      }
     }
   }
 }
