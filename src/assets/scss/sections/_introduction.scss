@@ -1,0 +1,108 @@
+.introduction::before,
+.introduction::after {
+  content: '';
+  position: absolute;
+  top: 75px;
+  width: 198px;
+  height: 198px;
+  border-radius: 198px;
+  z-index: -1;
+}
+
+.introduction::before {
+  left: -100px;
+  background-color: #a1ca6b;
+  filter: blur(60px);
+
+  @include mq(tablet) {
+    top: 83px;
+    left: -122px;
+    width: 344px;
+    height: 344px;
+    border-radius: 344px;
+    filter: blur(105px);
+  }
+
+  @include mq(desktop) {
+    top: 226px;
+    left: -46px;
+    width: 476px;
+    height: 476px;
+    border-radius: 476px;
+    filter: blur(145px);
+  }
+}
+
+.introduction::after {
+  right: -100px;
+  background-color: #db8c44;
+  filter: blur(76px);
+
+  @include mq(tablet) {
+    top: 95px;
+    right: -74px;
+    width: 309px;
+    height: 309px;
+    border-radius: 309px;
+    filter: blur(132px);
+  }
+
+  @include mq(desktop) {
+    top: 213px;
+    right: -28px;
+    width: 427px;
+    height: 427px;
+    border-radius: 427px;
+    filter: blur(182px);
+  }
+}
+
+.introduction-container {
+  padding-bottom: 248px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 251px 227px;
+  background-image: url(../images/introduction/introduction-bg-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/introduction/introduction-bg-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/introduction/introduction-bg-mob.webp)) {
+    background-image: url(../images/introduction/introduction-bg-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-bg-mob@2x.webp);
+    }
+  }
+
+  @include mq(tablet) {
+    padding-bottom: 0;
+    background-size: 255px 231px;
+    background-position: bottom 21px left 412px;
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 61px;
+    background-size: 487px 440px;
+    background-position: bottom 0 left 727px;
+
+    background-image: url(../images/introduction/introduction-bg-desk.png);
+
+    @include mq(retina) {
+      background-image: url(../images/introduction/introduction-bg-desk@2x.png);
+    }
+
+    @supports (background-image: url(../images/introduction/introduction-bg-desk.webp)) {
+      background-image: url(../images/introduction/introduction-bg-desk.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/introduction/introduction-bg-desk@2x.webp);
+      }
+    }
+  }
+}
+
+.introduction-title {
+  text-align: left;
+}

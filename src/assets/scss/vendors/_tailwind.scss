@@ -14,6 +14,10 @@ body {
   @apply bg-body font-montserratAlternates font-normal text-primary;
 }
 
+main {
+  overflow: hidden;
+}
+
 .section {
   @apply py-8 md:py-10 xl:py-[58px];
 }
@@ -23,7 +27,7 @@ body {
 }
 
 .btn {
-  @apply flex items-center justify-center rounded-[36px] border-0 bg-green text-sm font-medium leading-[1.2] text-primary shadow-btn duration-300 hover:bg-green-hover focus:bg-green-hover xl:text-2xl;
+  @apply flex items-center justify-center rounded-[36px] border-0 bg-green text-sm font-medium leading-[1.2] text-primary shadow-btn duration-300 hover:bg-green-hover focus:bg-green-hover xl:text-[24px];
 }
 
 .visually-hidden {
