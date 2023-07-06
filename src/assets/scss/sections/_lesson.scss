@@ -1,0 +1,83 @@
+.lesson::before,
+.lesson::after {
+  @include mq(mobile-only) {
+    content: '';
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.lesson::before {
+  @include mq(mobile-only) {
+    top: -297px;
+    left: -108px;
+    width: 242px;
+    height: 242px;
+    border-radius: 242px;
+    background-color: #db8c44;
+    filter: blur(93px);
+  }
+}
+
+.lesson::after {
+  @include mq(mobile-only) {
+    top: -99px;
+    right: -93px;
+    width: 228px;
+    height: 228px;
+    border-radius: 228px;
+    background-color: #a1ca6b;
+    filter: blur(69px);
+  }
+}
+
+.lesson-wrapper {
+  background-repeat: no-repeat;
+  background-position: center bottom 0px;
+  background-size: 280px 218px;
+
+  background-image: url(../images/lesson/lesson-bg-mob.png);
+  @include mq(retina) {
+    background-image: url(../images/lesson/lesson-bg-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/lesson/lesson-bg-mob.webp)) {
+    background-image: url(../images/lesson/lesson-bg-mob.webp);
+    @include mq(retina) {
+      background-image: url(../images/lesson/lesson-bg-mob@2x.webp);
+    }
+  }
+
+  @include mq(tablet) {
+    background-size: 313px 244px;
+    background-position: left 32px center;
+
+    background-image: url(../images/lesson/lesson-bg-tab.png);
+    @include mq(retina) {
+      background-image: url(../images/lesson/lesson-bg-tab@2x.png);
+    }
+
+    @supports (background-image: url(../images/lesson/lesson-bg-tab.webp)) {
+      background-image: url(../images/lesson/lesson-bg-tab.webp);
+      @include mq(retina) {
+        background-image: url(../images/lesson/lesson-bg-tab@2x.webp);
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    background-size: 546px 426px;
+
+    background-image: url(../images/lesson/lesson-bg-desk.png);
+    @include mq(retina) {
+      background-image: url(../images/lesson/lesson-bg-desk@2x.png);
+    }
+
+    @supports (background-image: url(../images/lesson/lesson-bg-desk.webp)) {
+      background-image: url(../images/lesson/lesson-bg-desk.webp);
+      @include mq(retina) {
+        background-image: url(../images/lesson/lesson-bg-desk@2x.webp);
+      }
+    }
+  }
+}
