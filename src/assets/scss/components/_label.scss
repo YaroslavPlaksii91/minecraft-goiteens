@@ -12,17 +12,17 @@
   height: 46px;
   top: 16px;
   left: 25px;
-  background-image: url(../images/introduction/introduction-boy-left-mob.png);
+  background-image: url(../images/macro-label/fly-left-mob.png);
 
   @include mq(retina) {
-    background-image: url(../images/introduction/introduction-boy-left-mob@2x.png);
+    background-image: url(../images/macro-label/fly-left-mob@2x.png);
   }
 
-  @supports (background-image: url(../images/introduction/introduction-boy-left-mob.webp)) {
-    background-image: url(../images/introduction/introduction-boy-left-mob.webp);
+  @supports (background-image: url(../images/macro-label/fly-left-mob.webp)) {
+    background-image: url(../images/macro-label/fly-left-mob.webp);
 
     @include mq(retina) {
-      background-image: url(../images/introduction/introduction-boy-left-mob@2x.webp);
+      background-image: url(../images/macro-label/fly-left-mob@2x.webp);
     }
   }
 
@@ -31,17 +31,17 @@
     height: 72px;
     top: 61px;
     left: 31px;
-    background-image: url(../images/introduction/introduction-boy-left-tab.png);
+    background-image: url(../images/macro-label/fly-left-tab.png);
 
     @include mq(retina) {
-      background-image: url(../images/introduction/introduction-boy-left-tab@2x.png);
+      background-image: url(../images/macro-label/fly-left-tab@2x.png);
     }
 
-    @supports (background-image: url(../images/introduction/introduction-boy-left-tab.webp)) {
-      background-image: url(../images/introduction/introduction-boy-left-tab.webp);
+    @supports (background-image: url(../images/macro-label/fly-left-tab.webp)) {
+      background-image: url(../images/macro-label/fly-left-tab.webp);
 
       @include mq(retina) {
-        background-image: url(../images/introduction/introduction-boy-left-tab@2x.webp);
+        background-image: url(../images/macro-label/fly-left-tab@2x.webp);
       }
     }
   }
@@ -51,17 +51,17 @@
     height: 129px;
     top: 142px;
     left: 56px;
-    background-image: url(../images/introduction/introduction-boy-left-desk.png);
+    background-image: url(../images/macro-label/fly-left-desk.png);
 
     @include mq(retina) {
-      background-image: url(../images/introduction/introduction-boy-left-desk@2x.png);
+      background-image: url(../images/macro-label/fly-left-desk@2x.png);
     }
 
-    @supports (background-image: url(../images/introduction/introduction-boy-left-desk.webp)) {
-      background-image: url(../images/introduction/introduction-boy-left-desk.webp);
+    @supports (background-image: url(../images/macro-label/fly-left-desk.webp)) {
+      background-image: url(../images/macro-label/fly-left-desk.webp);
 
       @include mq(retina) {
-        background-image: url(../images/introduction/introduction-boy-left-desk@2x.webp);
+        background-image: url(../images/macro-label/fly-left-desk@2x.webp);
       }
     }
   }
@@ -72,17 +72,17 @@
   height: 45px;
   top: 17px;
   right: 28px;
-  background-image: url(../images/introduction/introduction-boy-right-mob.png);
+  background-image: url(../images/macro-label/fly-right-mob.png);
 
   @include mq(retina) {
-    background-image: url(../images/introduction/introduction-boy-right-mob@2x.png);
+    background-image: url(../images/macro-label/fly-right-mob@2x.png);
   }
 
-  @supports (background-image: url(../images/introduction/introduction-boy-right-mob.webp)) {
-    background-image: url(../images/introduction/introduction-boy-right-mob.webp);
+  @supports (background-image: url(../images/macro-label/fly-right-mob.webp)) {
+    background-image: url(../images/macro-label/fly-right-mob.webp);
 
     @include mq(retina) {
-      background-image: url(../images/introduction/introduction-boy-right-mob@2x.webp);
+      background-image: url(../images/macro-label/fly-right-mob@2x.webp);
     }
   }
 
@@ -91,17 +91,17 @@
     height: 74px;
     top: 61px;
     right: 29px;
-    background-image: url(../images/introduction/introduction-boy-right-tab.png);
+    background-image: url(../images/macro-label/fly-right-tab.png);
 
     @include mq(retina) {
-      background-image: url(../images/introduction/introduction-boy-right-tab@2x.png);
+      background-image: url(../images/macro-label/fly-right-tab@2x.png);
     }
 
-    @supports (background-image: url(../images/introduction/introduction-boy-right-tab.webp)) {
-      background-image: url(../images/introduction/introduction-boy-right-tab.webp);
+    @supports (background-image: url(../images/macro-label/fly-right-tab.webp)) {
+      background-image: url(../images/macro-label/fly-right-tab.webp);
 
       @include mq(retina) {
-        background-image: url(../images/introduction/introduction-boy-right-tab@2x.webp);
+        background-image: url(../images/macro-label/fly-right-tab@2x.webp);
       }
     }
   }
@@ -111,17 +111,137 @@
     height: 133px;
     top: 140px;
     right: 56px;
-    background-image: url(../images/introduction/introduction-boy-right-desk.png);
+    background-image: url(../images/macro-label/fly-right-desk.png);
 
     @include mq(retina) {
-      background-image: url(../images/introduction/introduction-boy-right-desk@2x.png);
+      background-image: url(../images/macro-label/fly-right-desk@2x.png);
     }
 
-    @supports (background-image: url(../images/introduction/introduction-boy-right-desk.webp)) {
-      background-image: url(../images/introduction/introduction-boy-right-desk.webp);
+    @supports (background-image: url(../images/macro-label/fly-right-desk.webp)) {
+      background-image: url(../images/macro-label/fly-right-desk.webp);
 
       @include mq(retina) {
-        background-image: url(../images/introduction/introduction-boy-right-desk@2x.webp);
+        background-image: url(../images/macro-label/fly-right-desk@2x.webp);
+      }
+    }
+  }
+}
+
+.labelWalk::before {
+  width: 40px;
+  height: 49px;
+  top: 16px;
+  left: 14px;
+  background-image: url(../images/macro-label/walk-left-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/macro-label/walk-left-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/macro-label/walk-left-mob.webp)) {
+    background-image: url(../images/macro-label/walk-left-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/macro-label/walk-left-mob@2x.webp);
+    }
+  }
+
+  @include mq(tablet) {
+    width: 71px;
+    height: 88px;
+    top: 44px;
+    left: 32px;
+    background-image: url(../images/macro-label/walk-left-tab.png);
+
+    @include mq(retina) {
+      background-image: url(../images/macro-label/walk-left-tab@2x.png);
+    }
+
+    @supports (background-image: url(../images/macro-label/walk-left-tab.webp)) {
+      background-image: url(../images/macro-label/walk-left-tab.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/macro-label/walk-left-tab@2x.webp);
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    width: 141px;
+    height: 173px;
+    top: 82px;
+    left: 42px;
+    background-image: url(../images/macro-label/walk-left-desk.png);
+
+    @include mq(retina) {
+      background-image: url(../images/macro-label/walk-left-desk@2x.png);
+    }
+
+    @supports (background-image: url(../images/macro-label/walk-left-desk.webp)) {
+      background-image: url(../images/macro-label/walk-left-desk.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/macro-label/walk-left-desk@2x.webp);
+      }
+    }
+  }
+}
+
+.labelWalk::after {
+  width: 39px;
+  height: 49px;
+  top: 16px;
+  right: 16px;
+  background-image: url(../images/macro-label/walk-right-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/macro-label/walk-right-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/macro-label/walk-right-mob.webp)) {
+    background-image: url(../images/macro-label/walk-right-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/macro-label/walk-right-mob@2x.webp);
+    }
+  }
+
+  @include mq(tablet) {
+    width: 69px;
+    height: 88px;
+    top: 44px;
+    right: 29px;
+    background-image: url(../images/macro-label/walk-right-tab.png);
+
+    @include mq(retina) {
+      background-image: url(../images/macro-label/walk-right-tab@2x.png);
+    }
+
+    @supports (background-image: url(../images/macro-label/walk-right-tab.webp)) {
+      background-image: url(../images/macro-label/walk-right-tab.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/macro-label/walk-right-tab@2x.webp);
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    width: 136px;
+    height: 173px;
+    top: 82px;
+    right: 44px;
+    background-image: url(../images/macro-label/walk-right-desk.png);
+
+    @include mq(retina) {
+      background-image: url(../images/macro-label/walk-right-desk@2x.png);
+    }
+
+    @supports (background-image: url(../images/macro-label/walk-right-desk.webp)) {
+      background-image: url(../images/macro-label/walk-right-desk.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/macro-label/walk-right-desk@2x.webp);
       }
     }
   }
