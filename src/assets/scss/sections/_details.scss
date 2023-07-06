@@ -1,0 +1,105 @@
+.details-item .content::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.details-item:nth-child(1) li:nth-child(1) .content::before {
+  background-image: url(../images/details/test-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/details/test-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/details/test-mob.webp)) {
+    background-image: url(../images/details/test-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/details/test-mob@2x.webp);
+    }
+  }
+}
+
+.details-item:nth-child(1) li:nth-child(2) .content::before {
+  background-image: url(../images/details/coding-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/details/coding-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/details/coding-mob.webp)) {
+    background-image: url(../images/details/coding-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/details/coding-mob@2x.webp);
+    }
+  }
+}
+
+.details-item:nth-child(1) li:nth-child(3) .content::before {
+  background-image: url(../images/details/consultant-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/details/consultant-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/details/consultant-mob.webp)) {
+    background-image: url(../images/details/consultant-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/details/consultant-mob@2x.webp);
+    }
+  }
+}
+
+.details-item:nth-child(2) li:nth-child(1) .content::before {
+  background-image: url(../images/details/dimensions-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/details/dimensions-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/details/dimensions-mob.webp)) {
+    background-image: url(../images/details/dimensions-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/details/dimensions-mob@2x.webp);
+    }
+  }
+}
+
+.details-item:nth-child(2) li:nth-child(2) .content::before {
+  background-image: url(../images/details/computer-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/details/computer-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/details/computer-mob.webp)) {
+    background-image: url(../images/details/computer-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/details/computer-mob@2x.webp);
+    }
+  }
+}
+
+.details-item:nth-child(2) li:nth-child(3) .content::before {
+  background-image: url(../images/details/code-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/details/code-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/details/code-mob.webp)) {
+    background-image: url(../images/details/code-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/details/code-mob@2x.webp);
+    }
+  }
+}
