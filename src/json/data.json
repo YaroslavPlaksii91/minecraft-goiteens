@@ -157,6 +157,69 @@
     ]
   },
 
+  "choice": {
+    "id": "choice",
+    "title": "Програмування в Майнкрафт — це плацдарм для кар’єри в IT",
+    "course": {
+      "name": "Курс Minecraft",
+      "age": "7-12 років"
+    },
+    "firstStep": [
+      {
+        "name": "Front-End Junior",
+        "age": "10-11 років"
+      },
+      {
+        "name": "Roblox",
+        "age": "11-12 років"
+      },
+      {
+        "name": "Design Junior",
+        "age": "10-11 років"
+      },
+      {
+        "name": "Front End",
+        "age": "11-16 років"
+      }
+    ],
+    "secondStep": [
+      {
+        "name": "Front End",
+        "age": "11-16 років"
+      },
+      {
+        "name": "GameDev",
+        "age": "13-16 років"
+      },
+      {
+        "name": "Digital Design",
+        "age": "13-16 років"
+      },
+      {
+        "name": "Phyton",
+        "age": "13-16 років"
+      }
+    ],
+    "thirdStep": [
+      {
+        "name": "Розробник сайтів",
+        "salary": "середня ЗП від €2 000"
+      },
+      {
+        "name": "Розробник ігор",
+        "salary": "середня ЗП від €2 700"
+      },
+      {
+        "name": "Діджитал дизайнер",
+        "salary": "середня ЗП від €2 700"
+      },
+      {
+        "name": "Фул-стек розробник",
+        "salary": "середня ЗП від €3 000"
+      }
+    ]
+  },
+
   "footer": {
     "id": "footer",
     "socialLinks": [
