@@ -13,37 +13,6 @@
   }
 }
 
-.labelCard__introduction {
-  margin-bottom: 86px;
-  @include mq(tablet) {
-    margin-bottom: 80px;
-  }
-  @include mq(desktop) {
-    margin-bottom: 179px;
-  }
-}
-.labelCard__studying {
-  margin-bottom: 86px;
-  @include mq(tablet) {
-    margin-bottom: 80px;
-  }
-  @include mq(desktop) {
-    margin-bottom: 116px;
-  }
-}
-.labelCard__choice {
-  margin-bottom: 86px;
-  @include mq(tablet) {
-    margin-bottom: 80px;
-  }
-  @include mq(desktop) {
-    margin-bottom: 116px;
-  }
-}
-.labelCard__future {
-  margin-bottom: 0px;
-}
-
 .labelCard::before,
 .labelCard::after {
   content: '';
