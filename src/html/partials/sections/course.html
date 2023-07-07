@@ -1,0 +1,22 @@
+{% set section = course %}
+<section class="{{section.id}} section">
+  <div class="container">
+    <h2
+      class="section-title mb-[29px] md:mx-auto md:mb-[126px] md:w-[631px] xl:mb-[168px] xl:w-[1042px]"
+    >
+      {{section.title}}
+    </h2>
+    <ul
+      class="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-x-9 md:gap-y-[106px] xl:gap-x-[130px] xl:gap-y-[144px]"
+    >
+      {% for item in section.list %}
+      <li
+        data-item="0{{loop.index}}"
+        class="course-item relative flex text-sm leading-[1.3] md:text-center xl:text-[20px] smOnly:min-h-[48px] smOnly:items-center smOnly:pl-[68px]"
+      >
+        {{item}}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
