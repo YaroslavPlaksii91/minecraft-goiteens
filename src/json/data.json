@@ -203,21 +203,23 @@
     "thirdStep": [
       {
         "name": "Розробник сайтів",
-        "salary": "середня ЗП від €2 000"
+        "salary": "середня ЗП <span class='font-semibold'>від €2 000</span>"
       },
       {
         "name": "Розробник ігор",
-        "salary": "середня ЗП від €2 700"
+        "salary": "середня ЗП <span class='font-semibold'>від €2 700</span>"
       },
       {
         "name": "Діджитал дизайнер",
-        "salary": "середня ЗП від €2 700"
+        "salary": "середня ЗП <span class='font-semibold'>від €2 700</span>"
       },
       {
         "name": "Фул-стек розробник",
-        "salary": "середня ЗП від €3 000"
+        "salary": "середня ЗП <span class='font-semibold'>від €3 000</span>"
       }
-    ]
+    ],
+    "label": "Дозвольте дитині спробувати себе в програмуванні на <span class='font-bold'>безоплатному уроці</span>",
+    "button": "Записатись"
   },
 
   "footer": {

@@ -44,6 +44,7 @@ module.exports = {
           DEFAULT: '#8BDB62', // class="bg-green text-green border-green"
           hover: '#B9F19D', // class="bg-green-hover  text-green-hover border-green-hover"
           pressed: '#A0D387', // class="bg-green-pressed  text-green-pressed  border-green-pressed "
+          age: '#D1F1AB',
         },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
