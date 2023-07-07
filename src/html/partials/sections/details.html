@@ -1,23 +1,25 @@
 {% set section = details %}
 <section class="{{section.id}} section">
-  <div class="container md:relative md:pb-[6px] xl:flex">
-    <div class="xl:w-[407px]">
+  <div class="container md:relative xl:flex mdOnly:pb-[10px]">
+    <div class="xl:mr-[26px]">
       <h2
-        class="section-title mb-4 md:mx-auto md:mb-[18px] xl:mb-[43px] xl:text-left xl:text-[32px] mdOnly:w-[513px]"
+        class="section-title mb-4 md:mb-[18px] md:w-[513px] xl:mb-[43px] xl:w-[381px] xl:text-left xl:text-[32px] mdOnly:mx-auto"
       >
         {{section.title}}
       </h2>
       <p
-        class="mb-[26px] text-center text-base font-normal leading-[1.3] md:text-[20px] xl:text-left xl:text-[32px]"
+        class="text-center text-base font-normal leading-[1.3] md:text-[20px] xl:w-[381px] xl:text-left xl:text-[32px] notXl:mb-[26px]"
       >
         {{section.subtitle}}
       </p>
     </div>
     <div class="md:flex md:gap-[37px] xl:gap-[67px]">
-      <ul class="mb-[30px] flex md:mb-[25px] md:flex-col md:gap-[35px] smOnly:justify-between">
+      <ul class="flex md:flex-col md:gap-[35px] xl:gap-10 smOnly:mb-[30px] smOnly:justify-between">
         {% for item in section.list1 %}
         <li class="w-[50%] md:w-[180px]">
-          <h3 class="mb-[6px] text-base font-semibold leading-[1.3] md:mb-1 xl:text-[24px]">
+          <h3
+            class="mb-[6px] text-base font-semibold leading-[1.3] md:mb-1 xl:mb-[14px] xl:text-[24px]"
+          >
             {{item.title}}
           </h3>
           <p
@@ -32,15 +34,15 @@
         {% for item in section.list2 %}
         <li class="details-item">
           <h3
-            class="mb-[17px] text-base font-semibold leading-[1.3] xs:h-[42px] md:mb-[19px] xl:text-[24px]"
+            class="mb-[17px] text-base font-semibold leading-[1.3] xs:h-[42px] md:mb-[19px] xl:mb-[27px] xl:text-[24px]"
           >
             {{item.title}}
           </h3>
-          <ul class="flex flex-col gap-[28px] md:gap-5">
+          <ul class="flex flex-col gap-8 md:gap-6 xl:gap-12">
             {% for text in item.content %}
             <li>
               <p
-                class="content flex items-center gap-[10px] text-xs leading-[1.2] md:gap-3 md:text-sm md:leading-[1.3] xl:text-[20px]"
+                class="content relative flex h-[28px] items-center pl-[42px] text-xs leading-[1.2] md:h-[36px] md:pl-[52px] md:text-sm md:leading-[1.3] xl:h-[52px] xl:text-[20px]"
               >
                 {{text}}
               </p>

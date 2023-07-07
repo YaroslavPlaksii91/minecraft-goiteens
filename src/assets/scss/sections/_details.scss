@@ -1,6 +1,8 @@
 .details-item .content::before {
   content: '';
-  display: block;
+  position: absolute;
+  top: -2px;
+  left: 0;
   width: 32px;
   height: 32px;
   background-position: center;
@@ -10,6 +12,10 @@
   @include mq(tablet) {
     width: 40px;
     height: 40px;
+  }
+
+  @include mq(desktop) {
+    top: 6px;
   }
 }
 
