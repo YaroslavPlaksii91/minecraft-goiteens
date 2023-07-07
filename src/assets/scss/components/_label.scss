@@ -292,3 +292,15 @@
     }
   }
 }
+
+.bottom {
+  margin-bottom: 86px;
+
+  @include mq(tablet) {
+    margin-bottom: 80px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 116px;
+  }
+}
