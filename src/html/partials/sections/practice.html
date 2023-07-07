@@ -1,0 +1,28 @@
+{% set section = practice %}
+
+<section class="{{section.id}} section">
+  <div class="container">
+    <h2 class="section-title mb-2 md:mx-auto md:mb-5 md:w-[576px]">{{section.title}}</h2>
+    <ul class="grid grid-cols-2 gap-[10px] leading-[1.3] md:gap-5 xl:gap-[107px]">
+      {% for item in section.lists %}
+      <li class="practice-list pt-[130px] md:pt-[220px] xl:pt-[300px]">
+        <h3
+          class="mx-auto mb-3 text-center text-[14px] font-semibold md:mb-[23px] md:w-[203px] md:text-[16px] xl:mb-[28px] xl:w-[363px] xl:text-[32px]"
+        >
+          {{item.title}}
+        </h3>
+        <ul class="text-[11px] md:text-[12px] xl:text-[16px]">
+          {% for list in item.lists %}
+          <li
+            class="practice-card__item mdOnly::min-h-[79px] mb-[15px] min-h-[106px] bg-white py-[10px] pl-[15px] pr-[10px] last:mb-0 md:mb-[27px] md:px-5 md:py-[15px] xl:mb-[43px] xl:w-[430px] xl:px-[30px] xl:py-5"
+          >
+            {{list}}
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
+
+      {% endfor %}
+    </ul>
+  </div>
+</section>
