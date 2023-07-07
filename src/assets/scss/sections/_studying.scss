@@ -1,0 +1,469 @@
+.studying {
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 75px;
+    width: 198px;
+    height: 198px;
+    border-radius: 198px;
+    z-index: -2;
+  }
+
+  &::before {
+    left: -98px;
+    background-color: #a1ca6b;
+    filter: blur(60px);
+
+    @include mq(tablet) {
+      top: 21px;
+      left: -122px;
+      width: 344px;
+      height: 344px;
+      border-radius: 344px;
+      filter: blur(105px);
+    }
+
+    @include mq(desktop) {
+      background-color: #db8c44;
+
+      top: 97px;
+      left: -131px;
+      width: 476px;
+      height: 476px;
+      border-radius: 476px;
+      filter: blur(145px);
+    }
+  }
+  &::after {
+    right: -100px;
+    background-color: #db8c44;
+    filter: blur(76px);
+
+    @include mq(tablet) {
+      top: 34px;
+      right: -74px;
+      width: 309px;
+      height: 309px;
+      border-radius: 309px;
+      filter: blur(132px);
+    }
+
+    @include mq(desktop) {
+      background-color: #a1ca6b;
+
+      top: 92px;
+      right: -94px;
+      width: 427px;
+      height: 427px;
+      border-radius: 427px;
+      filter: blur(182px);
+    }
+  }
+}
+
+.studying-card {
+  position: relative;
+
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    left: 0;
+
+    width: 68px;
+    height: 68px;
+  }
+
+  @include mq(tablet) {
+    &::before {
+      width: 96px;
+      height: 96px;
+    }
+  }
+  @include mq(desktop) {
+    &::before {
+      width: 115px;
+      height: 115px;
+    }
+  }
+
+  &:nth-child(1) {
+    &::before {
+      background-image: url(../images/studying/icon-bg-1.svg);
+    }
+
+    &::after {
+      left: 11px;
+
+      width: 45px;
+      height: 45px;
+
+      background-image: url(../images/studying/studying-icon-1-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/studying/studying-icon-1-mob@2x.png);
+      }
+      @supports (background-image: url(../images/studying/studying-icon-1-mob.webp)) {
+        background-image: url(../images/studying/studying-icon-1-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-1-mob@2x.webp);
+        }
+      }
+    }
+    @include mq(tablet) {
+      &::after {
+        left: 16px;
+
+        width: 64px;
+        height: 64px;
+
+        background-image: url(../images/studying/studying-icon-1-tab.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-1-tab@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-1-tab.webp)) {
+          background-image: url(../images/studying/studying-icon-1-tab.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-1-tab@2x.webp);
+          }
+        }
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 19px;
+
+        width: 76px;
+        height: 76px;
+
+        background-image: url(../images/studying/studying-icon-1-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-1-desk@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-1-desk.webp)) {
+          background-image: url(../images/studying/studying-icon-1-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-1-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+  &:nth-child(2) {
+    &::before {
+      background-image: url(../images/studying/icon-bg-2.svg);
+    }
+
+    &::after {
+      left: 11px;
+
+      width: 45px;
+      height: 45px;
+
+      background-image: url(../images/studying/studying-icon-2-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/studying/studying-icon-2-mob@2x.png);
+      }
+      @supports (background-image: url(../images/studying/studying-icon-2-mob.webp)) {
+        background-image: url(../images/studying/studying-icon-2-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-2-mob@2x.webp);
+        }
+      }
+    }
+    @include mq(tablet) {
+      &::after {
+        left: 16px;
+
+        width: 64px;
+        height: 64px;
+
+        background-image: url(../images/studying/studying-icon-2-tab.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-2-tab@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-2-tab.webp)) {
+          background-image: url(../images/studying/studying-icon-2-tab.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-2-tab@2x.webp);
+          }
+        }
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 19px;
+
+        width: 76px;
+        height: 76px;
+
+        background-image: url(../images/studying/studying-icon-2-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-2-desk@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-2-desk.webp)) {
+          background-image: url(../images/studying/studying-icon-2-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-2-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+  &:nth-child(3) {
+    &::before {
+      background-image: url(../images/studying/icon-bg-3.svg);
+    }
+
+    &::after {
+      left: 11px;
+
+      width: 45px;
+      height: 45px;
+
+      background-image: url(../images/studying/studying-icon-3-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/studying/studying-icon-3-mob@2x.png);
+      }
+      @supports (background-image: url(../images/studying/studying-icon-3-mob.webp)) {
+        background-image: url(../images/studying/studying-icon-3-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-3-mob@2x.webp);
+        }
+      }
+    }
+    @include mq(tablet) {
+      &::after {
+        left: 16px;
+
+        width: 64px;
+        height: 64px;
+
+        background-image: url(../images/studying/studying-icon-3-tab.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-3-tab@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-3-tab.webp)) {
+          background-image: url(../images/studying/studying-icon-3-tab.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-3-tab@2x.webp);
+          }
+        }
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 19px;
+
+        width: 76px;
+        height: 76px;
+
+        background-image: url(../images/studying/studying-icon-3-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-3-desk@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-3-desk.webp)) {
+          background-image: url(../images/studying/studying-icon-3-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-3-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+  &:nth-child(4) {
+    &::before {
+      background-image: url(../images/studying/icon-bg-4.svg);
+    }
+
+    &::after {
+      left: 11px;
+
+      width: 45px;
+      height: 45px;
+
+      background-image: url(../images/studying/studying-icon-4-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/studying/studying-icon-4-mob@2x.png);
+      }
+      @supports (background-image: url(../images/studying/studying-icon-4-mob.webp)) {
+        background-image: url(../images/studying/studying-icon-4-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-4-mob@2x.webp);
+        }
+      }
+    }
+    @include mq(tablet) {
+      &::after {
+        left: 16px;
+
+        width: 64px;
+        height: 64px;
+
+        background-image: url(../images/studying/studying-icon-4-tab.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-4-tab@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-4-tab.webp)) {
+          background-image: url(../images/studying/studying-icon-4-tab.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-4-tab@2x.webp);
+          }
+        }
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 19px;
+
+        width: 76px;
+        height: 76px;
+
+        background-image: url(../images/studying/studying-icon-4-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-4-desk@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-4-desk.webp)) {
+          background-image: url(../images/studying/studying-icon-4-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-4-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+  &:nth-child(5) {
+    &::before {
+      background-image: url(../images/studying/icon-bg-5.svg);
+    }
+
+    &::after {
+      left: 11px;
+
+      width: 45px;
+      height: 45px;
+
+      background-image: url(../images/studying/studying-icon-5-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/studying/studying-icon-5-mob@2x.png);
+      }
+      @supports (background-image: url(../images/studying/studying-icon-5-mob.webp)) {
+        background-image: url(../images/studying/studying-icon-5-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-5-mob@2x.webp);
+        }
+      }
+    }
+    @include mq(tablet) {
+      &::after {
+        left: 16px;
+
+        width: 64px;
+        height: 64px;
+
+        background-image: url(../images/studying/studying-icon-5-tab.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-5-tab@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-5-tab.webp)) {
+          background-image: url(../images/studying/studying-icon-5-tab.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-5-tab@2x.webp);
+          }
+        }
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 19px;
+
+        width: 76px;
+        height: 76px;
+
+        background-image: url(../images/studying/studying-icon-5-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-5-desk@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-5-desk.webp)) {
+          background-image: url(../images/studying/studying-icon-5-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-5-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+  &:nth-child(6) {
+    &::before {
+      background-image: url(../images/studying/icon-bg-6.svg);
+    }
+
+    &::after {
+      left: 11px;
+
+      width: 45px;
+      height: 45px;
+
+      background-image: url(../images/studying/studying-icon-6-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/studying/studying-icon-6-mob@2x.png);
+      }
+      @supports (background-image: url(../images/studying/studying-icon-6-mob.webp)) {
+        background-image: url(../images/studying/studying-icon-6-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-6-mob@2x.webp);
+        }
+      }
+    }
+    @include mq(tablet) {
+      &::after {
+        left: 16px;
+
+        width: 64px;
+        height: 64px;
+
+        background-image: url(../images/studying/studying-icon-6-tab.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-6-tab@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-6-tab.webp)) {
+          background-image: url(../images/studying/studying-icon-6-tab.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-6-tab@2x.webp);
+          }
+        }
+      }
+    }
+    @include mq(desktop) {
+      &::after {
+        left: 19px;
+
+        width: 76px;
+        height: 76px;
+
+        background-image: url(../images/studying/studying-icon-6-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/studying/studying-icon-6-desk@2x.png);
+        }
+        @supports (background-image: url(../images/studying/studying-icon-6-desk.webp)) {
+          background-image: url(../images/studying/studying-icon-6-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/studying/studying-icon-6-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+}
