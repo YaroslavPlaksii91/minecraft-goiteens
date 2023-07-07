@@ -1,8 +1,10 @@
 {% set section = introduction %} {% import '../components/macro/label.html' as label %}
 <section class="{{section.id}} section relative">
   <div class="introduction-wrapper container">
-    {{label.label(section.label, 'labelFly', section.button)}}
-    <h2 class="section-title introduction-title mb-4 md:mb-3 md:w-[372px] xl:mb-5 xl:w-[621px]">
+    {{label.label(section.label, 'labelFly', section.button, 'bottom')}}
+    <h2
+      class="section-title introduction-title mb-4 md:mb-3 md:w-[372px] xl:mb-5 xl:w-[621px] xl:pt-[63px]"
+    >
       {{section.title}}
     </h2>
     <p
