@@ -7,6 +7,8 @@
 
 @import 'utils/mixins';
 @import 'vendors/tailwind';
+@import 'vendors/slick';
+@import 'vendors/slick-theme';
 
 @import 'components/input';
 @import 'components/form';
@@ -25,5 +27,5 @@
 @import 'sections/practice';
 @import 'sections/course';
 @import 'sections/studying';
-
 @import 'sections/choice';
+@import 'sections/reviews';

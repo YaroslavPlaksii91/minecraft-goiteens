@@ -1,0 +1,87 @@
+{% macro reviewStars(rating, ariaLabel) %}
+
+<ul class="flex gap-[6px] xl:gap-[10px]">
+  {% if rating === "1" %}
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  {% elif rating === "2" %}
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  {% elif rating === "3" %}
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  {% elif rating === "4" %}
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  {% else %}
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  <li class="h-4 w-4 md:h-[18px] md:w-[18px] xl:h-[24px] xl:w-[24px]">
+    <svg aria-label="{{ariaLabel}}" width="16" height="16" class="h-full w-full">
+      <use href="./assets/images/sprite.svg#review-star"></use>
+    </svg>
+  </li>
+  {% endif %}
+</ul>
+
+{% endmacro %}
