@@ -1,0 +1,58 @@
+.future::before,
+.future::after {
+  content: '';
+  position: absolute;
+  bottom: 66px;
+  width: 198px;
+  height: 198px;
+  border-radius: 198px;
+  z-index: -1;
+}
+
+.future::before {
+  left: -100px;
+  background-color: #a1ca6b;
+  filter: blur(60px);
+
+  @include mq(tablet) {
+    bottom: -119px;
+    left: -122px;
+    width: 344px;
+    height: 344px;
+    border-radius: 344px;
+    filter: blur(105px);
+  }
+
+  @include mq(desktop) {
+    bottom: -82px;
+    left: -76px;
+    width: 427px;
+    height: 427px;
+    border-radius: 427px;
+    filter: blur(182px);
+  }
+}
+
+.future::after {
+  right: -100px;
+  background-color: #db8c44;
+  filter: blur(76px);
+
+  @include mq(tablet) {
+    bottom: -96px;
+    right: -74px;
+    width: 309px;
+    height: 309px;
+    border-radius: 309px;
+    filter: blur(132px);
+  }
+
+  @include mq(desktop) {
+    bottom: -52px;
+    right: -98px;
+    width: 476px;
+    height: 476px;
+    border-radius: 476px;
+    filter: blur(145px);
+  }
+}
