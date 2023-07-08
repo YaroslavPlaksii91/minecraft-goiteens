@@ -1,3 +1,18 @@
+.labelCard {
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(35px);
+
+  @include mq(tablet) {
+    box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(82px);
+  }
+  @include mq(desktop) {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+    backdrop-filter: blur(147px);
+  }
+}
+
 .labelCard::before,
 .labelCard::after {
   content: '';
@@ -244,5 +259,17 @@
         background-image: url(../images/macro-label/walk-right-desk@2x.webp);
       }
     }
+  }
+}
+
+.bottom {
+  margin-bottom: 86px;
+
+  @include mq(tablet) {
+    margin-bottom: 80px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 116px;
   }
 }
