@@ -1,0 +1,40 @@
+{% set section = reviews %} {% import '../components/macro/review-stars.html' as stars %}
+
+<section class="{{section.id}} section">
+  <div class="container xl:flex xl:gap-[54px]">
+    <div class="mb-[17px] leading-[1.3] md:mb-[28px] xl:mb-0 xl:w-[345px] xl:shrink-0 xl:pt-[21px]">
+      <h2
+        class="section-title mb-4 md:mb-5 xl:text-left xl:text-[32px] smOnly:text-left mdOnly:mx-auto mdOnly:w-[662px]"
+      >
+        {{section.title}}
+      </h2>
+      <p class="text-[16px] md:text-[20px] md:font-semibold xl:text-[24px] mdOnly:text-center">
+        {{section.description}}
+      </p>
+    </div>
+    <div class="reviews-slider">
+      {% for review in section.reviews %}
+      <div
+        class="leading-[1.2] md:!w-[216px] xl:!w-[259px] smOnly:!flex smOnly:h-[320px] smOnly:max-w-[234px] smOnly:flex-col smOnly:justify-between smOnly:rounded-md smOnly:px-5 smOnly:py-[22px] smOnly:shadow-review"
+      >
+        <div class="md:mb-[32px] xl:mb-[41px]">
+          <p
+            class="review-card__briefly xl:pt[60px] mb-2 pt-[33px] text-[12px] font-semibold md:mb-[6px] md:pt-[46px] md:text-[14px] xl:mb-2"
+          >
+            {{review.briefly}}
+          </p>
+          <p class="text-[12px] font-medium xl:text-[14px]">{{review.text}}</p>
+        </div>
+        <div>
+          <h3
+            class="mb-[9px] text-[14px] font-semibold md:mb-3 md:text-[16px] xl:mb-4 xl:text-[20px] smOnly:tracking-tighter"
+          >
+            {{review.name}}
+          </h3>
+          {{stars.reviewStars(review.rating, section.ariaLabelStar)}}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
