@@ -1,0 +1,86 @@
+{% set section = awards %}
+
+<section class="{{section.id}} section">
+  <div class="container">
+    <h2 class="section-title xl:md-5 mb-4 md:mx-auto md:mb-3 md:w-[441px] xl:w-[600px]">
+      {{section.title}}
+    </h2>
+    <p
+      class="mb-7 text-center text-[14px] leading-[1.3] md:text-[16px] xl:mx-auto xl:mb-[100px] xl:w-[1004px] xl:text-[20px]"
+    >
+      {{section.text}}
+    </p>
+    <ul class="flex justify-between">
+      {% for item in section.list %}
+      <li class="awards-item">
+        <div class="award-wrapper flex h-[108px] items-center justify-center">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/awards/{{item.image}}-desk.webp    1x,
+                ./assets/images/awards/{{item.image}}-desk@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./assets/images/awards/{{item.image}}-tab.webp    1x,
+                ./assets/images/awards/{{item.image}}-tab@2x.webp 2x
+              "
+              type="image/webp"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./assets/images/awards/{{item.image}}-mob.webp    1x,
+                ./assets/images/awards/{{item.image}}-mob@2x.webp 2x
+              "
+              type="image/webp"
+              media="(max-width: 767.98px)"
+            />
+            <source
+              srcset="
+                ./assets/images/awards/{{item.image}}-desk.png    1x,
+                ./assets/images/awards/{{item.image}}-desk@2x.png 2x
+              "
+              type="image/png"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./assets/images/awards/{{item.image}}-tab.png    1x,
+                ./assets/images/awards/{{item.image}}-tab@2x.png 2x
+              "
+              type="image/png"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./assets/images/awards/{{item.image}}-mob.png    1x,
+                ./assets/images/awards/{{item.image}}-mob@2x.png 2x
+              "
+              type="image/png"
+              media="(max-width: 767.98px)"
+            />
+
+            <img
+              class=""
+              src="./assets/images/awards/{{item.image}}-mob.png"
+              alt="Нагорода '{{item.title}}'"
+              width="56"
+              height="89"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <h3
+          class="text-center text-[12px] font-semibold leading-[1.3] md:text-[16px] xl:text-[24px]"
+        >
+          {{item.title}}
+        </h3>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

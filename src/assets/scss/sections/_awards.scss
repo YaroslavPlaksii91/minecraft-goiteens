@@ -1,0 +1,19 @@
+.awards-item:nth-child(1) {
+  width: 94px;
+}
+
+.awards-item:nth-child(2) {
+  width: 85px;
+
+  .award-wrapper {
+    // width: 85px;
+  }
+}
+
+.awards-item:nth-child(3) {
+  width: 115px;
+
+  .award-wrapper {
+    width: 90px;
+  }
+}
