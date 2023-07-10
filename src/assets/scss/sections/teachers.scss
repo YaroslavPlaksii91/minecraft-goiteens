@@ -1,0 +1,64 @@
+.teachers-title {
+  text-align: left;
+}
+
+.teachers-image {
+  @include mq(tablet) {
+    width: 260px;
+    height: 245px;
+  }
+
+  @include mq(desktop) {
+    width: 456px;
+    height: 429px;
+  }
+}
+
+/*! purgecss start ignore */
+
+.teachers-slider {
+  width: 282px;
+
+  @include mq(mobile-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(tablet) {
+    width: 260px;
+  }
+
+  @include mq(desktop) {
+    width: 456px;
+  }
+}
+
+.teachers-slider .slick-list {
+  margin-bottom: 24px;
+
+  @include mq(tablet) {
+    margin-bottom: 14px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.teachers-slider .slick-dots li {
+  margin-right: 25px;
+}
+
+.teachers-slider .slick-dots button {
+  width: 13px;
+  height: 13px;
+  background-color: #d9d9d9;
+}
+
+.teachers-slider .slick-dots li.slick-active button {
+  width: 17px;
+  height: 17px;
+  background-color: #4f8235;
+}
+
+/*! purgecss end ignore */
