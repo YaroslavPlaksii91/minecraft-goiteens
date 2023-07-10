@@ -1,0 +1,11 @@
+{% set section = future %} {% import '../components/macro/label.html' as label %}
+<section class="{{section.id}} section relative">
+  <div class="container pb-[54px] pt-[35px] md:pb-[55px] md:pt-10 xl:pb-20 xl:pt-0">
+    <h2
+      class="mb-[99px] text-center text-base font-semibold leading-[1.3] md:mb-[110px] md:text-xl md:leading-[1.2] xl:mx-auto xl:mb-[116px] xl:w-[1030px] xl:text-[32px]"
+    >
+      {{section.title}}
+    </h2>
+    {{label.label(section.label, 'labelWalk', section.button)}}
+  </div>
+</section>
