@@ -10,10 +10,12 @@
     >
       {{section.text}}
     </p>
-    <ul class="flex justify-between">
+    <ul class="flex justify-between gap-3 md:gap-[50px] xl:justify-center xl:gap-[72px]">
       {% for item in section.list %}
-      <li class="awards-item">
-        <div class="award-wrapper mb-2 flex h-[108px] items-center justify-center md:mb-3">
+      <li class="awards-item w-1/3 xl:w-[280px]">
+        <div
+          class="mb-2 flex h-[108px] items-center justify-center md:mb-3 md:h-[149px] xl:h-[227px]"
+        >
           <picture>
             <source
               srcset="
@@ -65,11 +67,11 @@
             />
 
             <img
-              class=""
+              class="awards-image"
               src="./assets/images/awards/{{item.image}}-mob.png"
               alt="Нагорода '{{item.title}}'"
-              width="56"
-              height="89"
+              width="45"
+              height="86"
               loading="lazy"
             />
           </picture>
