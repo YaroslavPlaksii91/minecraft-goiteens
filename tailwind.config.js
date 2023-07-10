@@ -19,8 +19,9 @@ module.exports = {
     },
     // SHADOW
     boxShadow: {
-      card: '0px 10px 20px 0px rgba(0, 0, 0, 0.07)', // class="shadow-orange"
-      btn: '0px 6px 8px 0px rgba(0, 9, 40, 0.20)',
+      card: '0px 10px 20px 0px rgba(0, 0, 0, 0.07)', // class="shadow-card"
+      btn: '0px 6px 8px 0px rgba(0, 9, 40, 0.20)', // class="shadow-btn"
+      review: '0px 2px 10px 0px rgba(0, 0, 0, 0.12)', // class="shadow-review"
     },
     // THEME
     extend: {
