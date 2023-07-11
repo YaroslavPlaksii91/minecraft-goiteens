@@ -58,25 +58,29 @@
 }
 
 .steps-bar {
-  @apply relative mx-[18px] flex justify-between border-b border-accent py-0 md:mx-10;
+  @apply relative flex justify-between border-b-4 border-accent py-0;
 
   & > .item.active {
-    @apply border-none bg-[#FFB584] text-[#010101];
+    @apply -top-[19px] h-[42px] w-[42px] border-[6px] border-accent bg-white text-xl font-bold text-accent;
+
+    & span {
+      display: block;
+    }
   }
 
   & > .item {
-    @apply absolute -top-3.5 flex h-7 w-7 items-center justify-center overflow-visible whitespace-nowrap rounded-full border border-accent bg-white text-center font-normal text-[#979797];
+    @apply absolute -top-3.5 h-8 w-8 overflow-visible whitespace-nowrap rounded-full border-4 border-accent bg-white text-center text-xl font-bold text-accent;
 
     &:first-child {
       @apply left-0;
     }
 
-    &:nth-child(2) {
-      left: calc(50% - 10px);
-    }
-
     &:last-child {
       @apply right-0;
+
+      & span {
+        right: 48px;
+      }
     }
   }
 }

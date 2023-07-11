@@ -365,12 +365,12 @@
   "form": {
     "id": "modalForm",
     "btnCloseAria": "кнопка закриття модального вікна",
-    "title": "Реєстрація",
-    "steps": ["1", "2", "3"],
+    "title": "Залишити заявку",
+    "steps": ["Перший крок", "Готово"],
     "INPUTS_EXPAMPLE": "Все доступные поля для формы лежат в файле 'allFormInputs.json' - скопируйте нужный обьект, и вставьте его ниже в массив inputs",
     "inputs": [
       {
-        "title": "Імʼя *",
+        "title": "Імʼя <span class='modal-star'>*</span>",
         "type": "text",
         "name": "name",
         "placeholder": "Ім’я",
@@ -378,7 +378,7 @@
         "required": true
       },
       {
-        "title": "Телефон *",
+        "title": "Контактний телефон <span class='modal-star'>*</span>",
         "type": "tel",
         "name": "phone",
         "placeholder": "",
@@ -386,7 +386,7 @@
         "required": true
       },
       {
-        "title": "Пошта *",
+        "title": "Email <span class='modal-star'>*</span>",
         "type": "email",
         "name": "email",
         "placeholder": "email@gmail.com",
@@ -394,25 +394,14 @@
         "required": true
       },
       {
-        "title": "Згоден з ",
+        "title": "Відправкою даної заявки я підтверджую, що я ознайомлений з <a href='https://goiteens.com/privacy-policy/' target='_blank' rel='noopener nofollow noreferrer' class='underline'>Політикою конфіденційності</a>, приймаю її умови і згоден з нею, включаючи ті, що стосуються регламентації обробки моїх персональних даних",
         "type": "checkbox",
         "name": "agree",
         "dataField": "checkbox",
         "required": true,
-        "class": "input-wrap-checkbox",
-        "linkSeparator": "та",
-        "links": [
-          {
-            "text": "Політика конфіденційності",
-            "href": "https://goit.global/ua/privacy-policy/"
-          },
-          {
-            "text": "Умови користування послугами",
-            "href": "https://goit.global/ua/terms-of-use/"
-          }
-        ]
+        "class": "input-wrap-checkbox"
       }
     ],
-    "btnSubmit": "Зареєструватися"
+    "btnSubmit": "Надіслати"
   }
 }

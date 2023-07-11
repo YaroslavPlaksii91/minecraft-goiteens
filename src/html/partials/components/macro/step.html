@@ -1,8 +1,10 @@
 {% macro stepDiv(steps, formId) %}
 
-<ul class="steps-bar list-none" data-{{formId}}-steps>
+<ul class="steps-bar mb-10 list-none" data-{{formId}}-steps>
   {% for step in steps %}
-  <li class="item {{'active' if loop.first}}">{{step}}</li>
+  <li class="item {{'active' if loop.first}}">
+    <span class="relative top-[-32px] hidden">{{step}}</span>
+  </li>
   {% endfor %}
 </ul>
 
