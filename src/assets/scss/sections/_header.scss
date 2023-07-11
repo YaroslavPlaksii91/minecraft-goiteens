@@ -1,3 +1,21 @@
+.header {
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include mq(mobile) {
+    left: calc((100vw - 480px) / 2 + 20px);
+    transform: translateX(0);
+  }
+
+  @include mq(tablet) {
+    left: calc((100vw - 768px) / 2 + 32px);
+  }
+
+  @include mq(desktop) {
+    left: calc((100vw - 1280px) / 2 + 32px);
+  }
+}
+
 .logo {
   width: 80px;
   height: 20px;
