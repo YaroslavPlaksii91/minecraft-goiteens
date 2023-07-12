@@ -1,17 +1,10 @@
 {% set section = header %}
 
-<header class="{{section.id}} py-[22px] md:py-[27px]">
-  <div class="container">
-    <a
-      href="{{page.canonical}}"
-      aria-label="{{logo.link_logo_aria}}"
-      target="_blank"
-      rel="noopener nofollow noreferrer"
-    >
-      <svg class="logo" width="150" height="46" aria-label="{{logo.logo_aria}}">
-        <title>{{logo.logo_aria}}</title>
-        <use href="./assets/images/sprite.svg#logo-black"></use>
-      </svg>
-    </a>
-  </div>
+<header class="{{section.id}} absolute z-30 top-[22px] md:top-[27px]">
+  <a href="{{page.canonical}}" aria-label="{{logo.link_logo_aria}}">
+    <svg class="logo" width="150" height="46" aria-label="{{logo.logo_aria}}">
+      <title>{{logo.logo_aria}}</title>
+      <use href="./assets/images/sprite.svg#logo-black"></use>
+    </svg>
+  </a>
 </header>

@@ -7,21 +7,25 @@
       data-modal-close
       aria-label="{{form.btnCloseAria}}"
     >
-      <svg
-        class="modal-btn-close-svg md:h-8 md:w-8"
-        width="24"
-        height="24"
-        aria-label="{{form.btnCloseAria}}"
-      >
+      <svg class="modal-btn-close-svg" width="24" height="24" aria-label="{{form.btnCloseAria}}">
         <use href="./assets/images/sprite.svg#icon-close-menu"></use>
       </svg>
     </button>
+    <a
+      href="{{page.canonical}}"
+      aria-label="{{logo.link_logo_aria}}"
+      target="_blank"
+      rel="noopener nofollow noreferrer"
+      class="mb-[60px]"
+    >
+      <svg class="logo" width="142" height="36" aria-label="{{logo.logo_aria}}">
+        <title>{{logo.logo_aria}}</title>
+        <use href="./assets/images/sprite.svg#logo-black"></use>
+      </svg>
+    </a>
+    {% import './macro/step.html' as service %} {{service.stepDiv(form.steps, formId)}}
+    <h2 class="mb-5 text-[20px] font-bold leading-[1.2] md:text-[24px]">{{ form.title }}</h2>
 
-    <h2 class="mb-9 text-[20px] font-bold leading-[1.2] md:mb-9 md:text-[24px]">
-      {{ form.title }}
-    </h2>
-
-    {% import './macro/step.html' as service %} {{service.stepDiv(form.steps, formId)}} {% include
-    './formFields.njk' %}
+    {% include './formFields.njk' %}
   </div>
 </div>

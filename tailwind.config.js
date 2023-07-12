@@ -22,6 +22,7 @@ module.exports = {
       card: '0px 10px 20px 0px rgba(0, 0, 0, 0.07)', // class="shadow-card"
       btn: '0px 6px 8px 0px rgba(0, 9, 40, 0.20)', // class="shadow-btn"
       review: '0px 2px 10px 0px rgba(0, 0, 0, 0.12)', // class="shadow-review"
+      questions: '0px 2px 11px 0px rgba(0, 0, 0, 0.16)',
     },
     // THEME
     extend: {
@@ -50,6 +51,7 @@ module.exports = {
           hover: '#B9F19D', // class="bg-green-hover  text-green-hover border-green-hover"
           pressed: '#A0D387', // class="bg-green-pressed  text-green-pressed  border-green-pressed "
           age: '#D1F1AB',
+          close: '#8ADB62',
         },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"

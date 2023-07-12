@@ -30,6 +30,44 @@ main {
   @apply flex items-center justify-center rounded-[22px] border-0 bg-green text-sm font-medium leading-[1.2] text-primary shadow-btn duration-300 hover:bg-green-hover focus:bg-green-hover md:rounded-[20px] xl:rounded-[36px] xl:text-[24px];
 }
 
+.bg-blur::before,
+.bg-blur::after {
+  content: '';
+  position: absolute;
+  width: 198px;
+  height: 198px;
+  border-radius: 198px;
+  z-index: -1;
+}
+
+.bg-blur::before {
+  left: -100px;
+  background-color: #a1ca6b;
+  filter: blur(60px);
+
+  @include mq(tablet) {
+    left: -122px;
+    width: 344px;
+    height: 344px;
+    border-radius: 344px;
+    filter: blur(105px);
+  }
+}
+
+.bg-blur::after {
+  right: -100px;
+  background-color: #db8c44;
+  filter: blur(76px);
+
+  @include mq(tablet) {
+    right: -74px;
+    width: 309px;
+    height: 309px;
+    border-radius: 309px;
+    filter: blur(132px);
+  }
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);

@@ -1,0 +1,34 @@
+.future::before,
+.future::after {
+  bottom: 66px;
+}
+
+.future::before {
+  @include mq(tablet) {
+    bottom: -119px;
+  }
+
+  @include mq(desktop) {
+    bottom: -82px;
+    left: -76px;
+    width: 427px;
+    height: 427px;
+    border-radius: 427px;
+    filter: blur(182px);
+  }
+}
+
+.future::after {
+  @include mq(tablet) {
+    bottom: -96px;
+  }
+
+  @include mq(desktop) {
+    bottom: -52px;
+    right: -98px;
+    width: 476px;
+    height: 476px;
+    border-radius: 476px;
+    filter: blur(145px);
+  }
+}

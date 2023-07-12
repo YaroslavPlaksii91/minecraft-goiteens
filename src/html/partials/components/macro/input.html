@@ -51,17 +51,6 @@
     />
     <span class="checkbox"></span>
     {{ arg.title }}
-    {% for link in arg.links %}
-    <a
-      class="text-accent"
-      href="{{ link.href }}"
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-    >
-      {{ link.text }}
-    </a>
-    {% if not loop.last %} <br> {{ arg.linkSeparator }} {% endif %}
-    {% endfor %}
   </label>
 
   <!-- ELSE -->
