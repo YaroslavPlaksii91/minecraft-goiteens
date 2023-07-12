@@ -4,7 +4,7 @@
     "lang": "uk",
     "title": "Онлайн-курси програмування Minecraft для дітей від 7-11 років",
     "description": "Допомагаємо школярам  полюбити навчання та програмування",
-    "canonical": "./"
+    "canonical": "https://goiteens.com/course/minecraft/"
   },
   "logo": {
     "link_logo_aria": "Посилання на головну сторінку сайту",
@@ -283,6 +283,1271 @@
     "label": "Дозвольте дитині спробувати себе в програмуванні на <span class='font-bold'>безоплатному уроці</span>",
     "button": "Записатись"
   },
+  "offers": {
+    "id": "offers",
+    "title": "Оберіть курс за віком дитини",
+    "description": "Учні 1-2 класів та учні 3-5 класів мають різну підготовку, досвід та мотивацію, тому ми розділили курс  за віком.",
+    "button": {
+      "open": "Розгорнути",
+      "close": "Згорнути",
+      "ariaLabel": "Іконка показу програми курсу"
+    },
+    "courses": [
+      {
+        "age": "7-8 років",
+        "title": {
+          "courseName": "Minecraft Kids",
+          "textFirst": "курс",
+          "textSecond": "Записати дитину на курс",
+          "textThird": "Вартість навчання на курсі"
+        },
+        "text": "Програма курсу та вартість",
+        "courseInfo": [
+          [
+            { "title": "Група:", "text": ["до 10-ти дітей"] },
+            { "title": "Тривалість курсу:", "text": ["1 рік або 32 тижні"] },
+            { "title": "Інтенсивність:", "text": ["2 заняття на тиждень в будні чи вихідні"] },
+            { "title": "Кількість занять:", "text": ["64 уроки по 45 хвилин"] }
+          ],
+          [
+            {
+              "title": "Що вивчаємо?",
+              "text": ["«Живу» математику та базове блочне програмування у всесвіті Майнкрафт."]
+            },
+            {
+              "title": "Під час курсу дитина порине в дивовижний світ IT та навчиться:",
+              "text": [
+                "Використовувати на практиці математичні операції: додавання, віднімання, ділення, множення. Легко знаходити периметр та площу об’єктів.",
+                "Розраховувати необхідну кількість матеріалів для будівництва в грі.",
+                "Працювати з циклами, функціями та змінними.",
+                "Розуміти основні хімічні реакції.",
+                "Відтворювати репліки реальних будівель в 3D-просторі та cтворювати NPC-персонажів."
+              ]
+            }
+          ]
+        ],
+        "button": "Записатись",
+        "textAttention": "<strong class='font-semibold'>Увага!</strong> Після успішного завершення курсу «Minecraft Kids», дитина може продовжити навчання на курсі «Minecraft», на якому студенти вже занурюються в процес програмування та готуються до вибору та освоєння майбутньої спеціалізації: GameDev, Python тощо.",
+        "offersPlan": {
+          "promo": {
+            "id": "modalPayment",
+            "input": {
+              "type": "text",
+              "name": "promocode",
+              "placeholder": "промокод",
+              "required": true
+            },
+            "btnSubmit": "Застосувати"
+          },
+          "payments": [
+            { "currency": "USD", "text": "USD $", "ariaLabel": "Долар" },
+            { "currency": "UAH", "text": "ГРН ₴", "ariaLabel": "Гривня" },
+            { "currency": "EUR", "text": "EUR €", "ariaLabel": "Евро" }
+          ],
+          "paymentSlider": [
+            {
+              "id": "USD",
+              "list": [
+                {
+                  "currency": "USD",
+                  "discount": "",
+                  "duration": "1 місяць",
+                  "currencySymbol": "$",
+                  "perMonth": "60",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "",
+                    "value": ""
+                  },
+                  "totalNewPrice": "",
+                  "totalOldPrice": "",
+                  "description": {
+                    "text": "Шомісяця дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Буде отримувати нові знання з програмування в Майнкрафт.",
+                      "Розширюватиме кругозір, розвиватиме математичні та соціальні навички."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "USD",
+                  "discount": "10",
+                  "duration": "3 місяці",
+                  "currencySymbol": "$",
+                  "perMonth": "54",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "18"
+                  },
+                  "totalNewPrice": "163",
+                  "totalOldPrice": "181",
+                  "description": {
+                    "text": "За 3 місяці дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє вести обчислення, додавати та віднімати.",
+                      "Активно використовує математику на практиці у грі."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "USD",
+                  "discount": "15",
+                  "duration": "6 місяців",
+                  "currencySymbol": "$",
+                  "perMonth": "51",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "54"
+                  },
+                  "totalNewPrice": "308",
+                  "totalOldPrice": "362",
+                  "description": {
+                    "text": "За 6 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вираховує периметр та площу об’єктів.",
+                      "Проєктує та будує фігури Майнкрафт."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "USD",
+                  "discount": "17",
+                  "duration": "9 місяців",
+                  "currencySymbol": "$",
+                  "perMonth": "50",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "91"
+                  },
+                  "totalNewPrice": "453",
+                  "totalOldPrice": "543",
+                  "description": {
+                    "text": "За 9 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє викликати функції з параметром, використовувати цикли та елементи управління агентом."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "USD",
+                  "discount": "20",
+                  "duration": "12 місяців",
+                  "currencySymbol": "$",
+                  "perMonth": "48",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "145"
+                  },
+                  "totalNewPrice": "580",
+                  "totalOldPrice": "725",
+                  "description": {
+                    "text": "За 12 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Відтворює реальні споруди та будівлі за підготовленою схемою.",
+                      "Використовує команди в Майнкрафт та створює NPC."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "UAH",
+              "list": [
+                {
+                  "currency": "UAH",
+                  "discount": "",
+                  "duration": "1 місяць",
+                  "currencySymbol": "₴",
+                  "perMonth": "2 400",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "",
+                    "value": ""
+                  },
+                  "totalNewPrice": "",
+                  "totalOldPrice": "",
+                  "description": {
+                    "text": "Шомісяця дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Буде отримувати нові знання з програмування в Майнкрафт.",
+                      "Розширюватиме кругозір, розвиватиме математичні та соціальні навички."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "UAH",
+                  "discount": "10",
+                  "duration": "3 місяці",
+                  "currencySymbol": "₴",
+                  "perMonth": "2 160",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "720"
+                  },
+                  "totalNewPrice": "6 480",
+                  "totalOldPrice": "7 200",
+                  "description": {
+                    "text": "За 3 місяці дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє вести обчислення, додавати та віднімати.",
+                      "Активно використовує математику на практиці у грі."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "id": "UAH",
+                  "discount": "15",
+                  "duration": "6 місяців",
+                  "currencySymbol": "₴",
+                  "perMonth": "2 040",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "2 160"
+                  },
+                  "totalNewPrice": "12 240",
+                  "totalOldPrice": "14 400",
+                  "description": {
+                    "text": "За 6 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вираховує периметр та площу об’єктів.",
+                      "Проєктує та будує фігури Майнкрафт."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "UAH",
+                  "discount": "17",
+                  "duration": "9 місяців",
+                  "currencySymbol": "₴",
+                  "perMonth": "2 000",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "3 600"
+                  },
+                  "totalNewPrice": "18 000",
+                  "totalOldPrice": "21 600",
+                  "description": {
+                    "text": "За 9 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє викликати функції з параметром, використовувати цикли та елементи управління агентом."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "UAH",
+                  "discount": "20",
+                  "duration": "12 місяців",
+                  "currencySymbol": "₴",
+                  "perMonth": "1 920",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "5 760"
+                  },
+                  "totalNewPrice": "23 040",
+                  "totalOldPrice": "28 800",
+                  "description": {
+                    "text": "За 12 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Відтворює реальні споруди та будівлі за підготовленою схемою.",
+                      "Використовує команди в Майнкрафт та створює NPC."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "EUR",
+              "list": [
+                {
+                  "currency": "EUR",
+                  "discount": "",
+                  "duration": "1 місяць",
+                  "currencySymbol": "€",
+                  "perMonth": "57",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "",
+                    "value": ""
+                  },
+                  "totalNewPrice": "",
+                  "totalOldPrice": "",
+                  "description": {
+                    "text": "Шомісяця дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Буде отримувати нові знання з програмування в Майнкрафт.",
+                      "Розширюватиме кругозір, розвиватиме математичні та соціальні навички."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "EUR",
+                  "discount": "10",
+                  "duration": "3 місяці",
+                  "currencySymbol": "€",
+                  "perMonth": "52",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "17"
+                  },
+                  "totalNewPrice": "155",
+                  "totalOldPrice": "172",
+                  "description": {
+                    "text": "За 3 місяці дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє вести обчислення, додавати та віднімати.",
+                      "Активно використовує математику на практиці у грі."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "EUR",
+                  "discount": "15",
+                  "duration": "6 місяців",
+                  "currencySymbol": "€",
+                  "perMonth": "49",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "52"
+                  },
+                  "totalNewPrice": "292",
+                  "totalOldPrice": "344",
+                  "description": {
+                    "text": "За 6 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вираховує периметр та площу об’єктів.",
+                      "Проєктує та будує фігури Майнкрафт."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "EUR",
+                  "discount": "17",
+                  "duration": "9 місяців",
+                  "currencySymbol": "€",
+                  "perMonth": "48",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "86"
+                  },
+                  "totalNewPrice": "430",
+                  "totalOldPrice": "516",
+                  "description": {
+                    "text": "За 9 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє викликати функції з параметром, використовувати цикли та елементи управління агентом."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "EUR",
+                  "discount": "20",
+                  "duration": "12 місяців",
+                  "currencySymbol": "€",
+                  "perMonth": "43",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "137"
+                  },
+                  "totalNewPrice": "550",
+                  "totalOldPrice": "687",
+                  "description": {
+                    "text": "За 12 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Відтворює реальні споруди та будівлі за підготовленою схемою.",
+                      "Використовує команди в Майнкрафт та створює NPC."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        "textPost": "В разі необхідності, ви можете «заморозити» навчання терміном до <b>2-х місяців</b> та зберегти кошти!"
+      },
+
+      {
+        "age": "9-12 років",
+        "title": {
+          "courseName": "Minecraft Junior",
+          "textFirst": "курс",
+          "textSecond": "Записати дитину на курс",
+          "textThird": "Вартість навчання на курсі"
+        },
+        "text": "Програма курсу та вартість",
+        "courseInfo": [
+          [
+            { "title": "Група:", "text": ["до 12-ти дітей"] },
+            { "title": "Тривалість курсу:", "text": ["2 рік або 80 тижні"] },
+            { "title": "Інтенсивність:", "text": ["2 заняття на тиждень в будні чи вихідні"] },
+            {
+              "title": "Кількість занять:",
+              "text": ["160 уроків (80 уроків по 90 хв., 80 уроків по 60 хв.)"]
+            }
+          ],
+          [
+            {
+              "title": "Що вивчаємо?",
+              "text": [
+                "«Більш складні елементи програмування, проєктування та створення 3D-світів, основи JavaScript."
+              ]
+            },
+            {
+              "title": "Під час курсу дитина порине в дивовижний світ IT та навчиться:",
+              "text": [
+                "Читати та розуміти технічне завдання, а головне, створювати за ним проєкти",
+                "Втілювати власні ідеї за допомогою блочного програмування.Проєктувати будівлі та вести точні розрахунки",
+                "Використовувати відносні та абсолютні координати.Працювати зі структурами даних та будувати логічні ланцюжки.",
+                "Будувати за реальними зображеннями складні конструкції: історичні пам’ятки та навіть цілі міста.Програмувати NPC-персонажів, дії та час."
+              ]
+            }
+          ]
+        ],
+        "button": "Записатись",
+        "textAttention": "Якщо вашій дитині 9-12 років, але вона починає з нуля, не хвилюйтеся. На вступній частині курсу ми знайомимо студентів зі світом Майнкрафт та надаємо базові знання, необхідні для подальшого навчання.",
+        "offersPlan": {
+          "promo": {
+            "id": "modalPayment",
+            "input": {
+              "type": "text",
+              "name": "promocode",
+              "placeholder": "промокод",
+              "required": true
+            },
+            "btnSubmit": "Застосувати"
+          },
+          "payments": [
+            { "currency": "USD", "text": "USD $", "ariaLabel": "Долар" },
+            { "currency": "UAH", "text": "ГРН ₴", "ariaLabel": "Гривня" },
+            { "currency": "EUR", "text": "EUR €", "ariaLabel": "Евро" }
+          ],
+          "paymentSlider": [
+            {
+              "id": "USD",
+              "list": [
+                {
+                  "currency": "USD",
+                  "discount": "",
+                  "duration": "1 місяць",
+                  "currencySymbol": "$",
+                  "perMonth": "60",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "",
+                    "value": ""
+                  },
+                  "totalNewPrice": "",
+                  "totalOldPrice": "",
+                  "description": {
+                    "text": "Шомісяця дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Буде отримувати нові знання з програмування в Майнкрафт.",
+                      "Розширюватиме кругозір, розвиватиме математичні та соціальні навички."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "USD",
+                  "discount": "10",
+                  "duration": "3 місяці",
+                  "currencySymbol": "$",
+                  "perMonth": "54",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "18"
+                  },
+                  "totalNewPrice": "163",
+                  "totalOldPrice": "181",
+                  "description": {
+                    "text": "За 3 місяці дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Засвоїть навички блочного програмування, збудує піраміду Хеопса, Сфінкса, Александрійський маяк, лабіринт."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "USD",
+                  "discount": "15",
+                  "duration": "6 місяців",
+                  "currencySymbol": "$",
+                  "perMonth": "51",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "54"
+                  },
+                  "totalNewPrice": "308",
+                  "totalOldPrice": "362",
+                  "description": {
+                    "text": "За 6 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Впевнено використовує в кодах функції, цикли, змінні.",
+                      "Працює над проєктом та проводить по ньому екскурсію."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "USD",
+                  "discount": "17",
+                  "duration": "9 місяців",
+                  "currencySymbol": "$",
+                  "perMonth": "50",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "91"
+                  },
+                  "totalNewPrice": "453",
+                  "totalOldPrice": "543",
+                  "description": {
+                    "text": "За 9 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє відтворювати будівлі самостійно без прикладу коду.",
+                      "Будує парк розваг, ринок та залізничний вокзал з розкладом."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "USD",
+                  "discount": "20",
+                  "duration": "12 місяців",
+                  "currencySymbol": "$",
+                  "perMonth": "48",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "145"
+                  },
+                  "totalNewPrice": "580",
+                  "totalOldPrice": "725",
+                  "description": {
+                    "text": "За 12 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Будує великий спільний проєкт — місто в Майнкрафт",
+                      "Вміє взаємодіяти з командою та презентувати роботу."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "UAH",
+              "list": [
+                {
+                  "currency": "UAH",
+                  "discount": "",
+                  "duration": "1 місяць",
+                  "currencySymbol": "₴",
+                  "perMonth": "2 400",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "",
+                    "value": ""
+                  },
+                  "totalNewPrice": "",
+                  "totalOldPrice": "",
+                  "description": {
+                    "text": "Шомісяця дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Буде отримувати нові знання з програмування в Майнкрафт.",
+                      "Розширюватиме кругозір, розвиватиме математичні та соціальні навички."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "UAH",
+                  "discount": "10",
+                  "duration": "3 місяці",
+                  "currencySymbol": "₴",
+                  "perMonth": "2 160",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "720"
+                  },
+                  "totalNewPrice": "6 480",
+                  "totalOldPrice": "7 200",
+                  "description": {
+                    "text": "За 3 місяці дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Засвоїть навички блочного програмування, збудує піраміду Хеопса, Сфінкса, Александрійський маяк, лабіринт."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "id": "UAH",
+                  "discount": "15",
+                  "duration": "6 місяців",
+                  "currencySymbol": "₴",
+                  "perMonth": "2 040",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "2 160"
+                  },
+                  "totalNewPrice": "12 240",
+                  "totalOldPrice": "14 400",
+                  "description": {
+                    "text": "За 6 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Впевнено використовує в кодах функції, цикли, змінні.",
+                      "Працює над проєктом та проводить по ньому екскурсію."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "UAH",
+                  "discount": "17",
+                  "duration": "9 місяців",
+                  "currencySymbol": "₴",
+                  "perMonth": "2 000",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "3 600"
+                  },
+                  "totalNewPrice": "18 000",
+                  "totalOldPrice": "21 600",
+                  "description": {
+                    "text": "За 9 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє відтворювати будівлі самостійно без прикладу коду.",
+                      "Будує парк розваг, ринок та залізничний вокзал з розкладом."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "UAH",
+                  "discount": "20",
+                  "duration": "12 місяців",
+                  "currencySymbol": "₴",
+                  "perMonth": "1 920",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "5 760"
+                  },
+                  "totalNewPrice": "23 040",
+                  "totalOldPrice": "28 800",
+                  "description": {
+                    "text": "За 12 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Будує великий спільний проєкт — місто в Майнкрафт",
+                      "Вміє взаємодіяти з командою та презентувати роботу."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "EUR",
+              "list": [
+                {
+                  "currency": "EUR",
+                  "discount": "",
+                  "duration": "1 місяць",
+                  "currencySymbol": "€",
+                  "perMonth": "57",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "",
+                    "value": ""
+                  },
+                  "totalNewPrice": "",
+                  "totalOldPrice": "",
+                  "description": {
+                    "text": "Шомісяця дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Буде отримувати нові знання з програмування в Майнкрафт.",
+                      "Розширюватиме кругозір, розвиватиме математичні та соціальні навички."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "EUR",
+                  "discount": "10",
+                  "duration": "3 місяці",
+                  "currencySymbol": "€",
+                  "perMonth": "52",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "17"
+                  },
+                  "totalNewPrice": "155",
+                  "totalOldPrice": "172",
+                  "description": {
+                    "text": "За 3 місяці дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Засвоїть навички блочного програмування, збудує піраміду Хеопса, Сфінкса, Александрійський маяк, лабіринт."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "EUR",
+                  "discount": "15",
+                  "duration": "6 місяців",
+                  "currencySymbol": "€",
+                  "perMonth": "49",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "52"
+                  },
+                  "totalNewPrice": "292",
+                  "totalOldPrice": "344",
+                  "description": {
+                    "text": "За 6 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Впевнено використовує в кодах функції, цикли, змінні.",
+                      "Працює над проєктом та проводить по ньому екскурсію."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "EUR",
+                  "discount": "17",
+                  "duration": "9 місяців",
+                  "currencySymbol": "€",
+                  "perMonth": "48",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "86"
+                  },
+                  "totalNewPrice": "430",
+                  "totalOldPrice": "516",
+                  "description": {
+                    "text": "За 9 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Вміє відтворювати будівлі самостійно без прикладу коду.",
+                      "Будує парк розваг, ринок та залізничний вокзал з розкладом."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                },
+                {
+                  "currency": "EUR",
+                  "discount": "20",
+                  "duration": "12 місяців",
+                  "currencySymbol": "€",
+                  "perMonth": "43",
+                  "perMonthText": "місяць",
+                  "profit": {
+                    "text": "Вигода",
+                    "value": "137"
+                  },
+                  "totalNewPrice": "550",
+                  "totalOldPrice": "687",
+                  "description": {
+                    "text": "За 12 місяців дитина:",
+                    "symbol": "✓",
+                    "toDo": [
+                      "Будує великий спільний проєкт — місто в Майнкрафт",
+                      "Вміє взаємодіяти з командою та презентувати роботу."
+                    ]
+                  },
+                  "button": { "ariaLabel": "Оплатити карткою", "text": "Оплатити карткою" },
+                  "payLinks": [
+                    {
+                      "id": "apple-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Apple Pay",
+                      "alt": "іконка Apple Pay"
+                    },
+                    {
+                      "id": "google-pay",
+                      "dataId": "",
+                      "ariaLabel": "посилання на оплату Google Pay",
+                      "alt": "іконка Google Pay"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        "textPost": "В разі необхідності, ви можете «заморозити» навчання терміном до <b>2-х місяців</b> та зберегти кошти!"
+      }
+    ]
+  },
   "awards": {
     "id": "awards",
     "title": "Чому батьки обирають для своїх дітей GoITeens?",
@@ -418,14 +1683,73 @@
         "required": true
       },
       {
-        "title": "Відправкою даної заявки я підтверджую, що я ознайомлений з <a href='https://goiteens.com/privacy-policy/' target='_blank' rel='noopener nofollow noreferrer' class='underline'>Політикою конфіденційності</a>, приймаю її умови і згоден з нею, включаючи ті, що стосуються регламентації обробки моїх персональних даних",
+        "title": "Відправкою даної заявки я підтверджую, що я ознайомлений з ",
         "type": "checkbox",
         "name": "agree",
         "dataField": "checkbox",
         "required": true,
-        "class": "input-wrap-checkbox"
+        "class": "input-wrap-checkbox",
+        "linkSeparator": "приймаю її умови і згоден з нею, включаючи ті, що стосуються регламентації обробки моїх персональних даних",
+        "links": [
+          {
+            "text": "Політикою конфіденційності",
+            "href": "https://goiteens.com/privacy-policy/"
+          }
+        ]
       }
     ],
-    "btnSubmit": "Надіслати"
+    "btnSubmit": "Зареєструватися"
+  },
+  "formPayment": {
+    "id": "modalFormPayment",
+    "btnCloseAria": "кнопка закриття модального вікна",
+    "title": "Підтвердження даних для оплати",
+    "coastInfo": ["Курс", "Тривалість", "Вартість", "Знижка", "До сплати"],
+    "inputs": [
+      {
+        "title": "Імʼя <span class='modal-star'>*</span>",
+        "type": "text",
+        "name": "name",
+        "placeholder": "Ім’я",
+        "dataField": "name",
+        "required": true
+      },
+      {
+        "title": "Контактний телефон <span class='modal-star'>*</span>",
+        "type": "tel",
+        "name": "phone",
+        "placeholder": "",
+        "dataField": "phone",
+        "required": true
+      },
+      {
+        "title": "Email <span class='modal-star'>*</span>",
+        "type": "email",
+        "name": "email",
+        "placeholder": "email@gmail.com",
+        "dataField": "email",
+        "required": true
+      },
+      {
+        "title": "Я погоджуюсь з ",
+        "type": "checkbox",
+        "name": "agree",
+        "dataField": "checkbox",
+        "required": true,
+        "class": "input-wrap-checkbox",
+        "linkSeparator": "та",
+        "links": [
+          {
+            "text": "Політикою конфіденційності",
+            "href": "https://goiteens.com/privacy-policy/"
+          },
+          {
+            "text": "Правилами публічної оферти",
+            "href": "https://goiteens.com/contract-skillsetter/"
+          }
+        ]
+      }
+    ],
+    "btnSubmit": "Підтвердити"
   }
 }

@@ -1,0 +1,84 @@
+{% macro card(cardsInfo, course) %}
+
+<div
+  class="offer-payment-card !flex min-h-[535px] max-w-[272px] flex-col justify-between overflow-hidden rounded-[10px] px-[19px] pb-[35px] pt-[26px] xl:h-[670px] xl:!w-[336px] xl:max-w-none xl:rounded-[12px] xl:px-[24px] xl:pb-[43px] xl:pt-[32px]"
+  data-currency="{{cardsInfo.id}}"
+>
+  <div>
+    <div class="relative flex min-h-[253px] flex-col items-center leading-[1.1] xl:mb-[14px]">
+      <h3 class="visually-hidden" data-modal-info>{{course}}</h3>
+      <p
+        class="mb-5 flex h-[39px] w-[133px] items-center justify-center rounded-[21px] bg-white text-[16px] font-bold leading-[1.2] xl:mb-[25px] xl:h-[48px] xl:w-[165px] xl:text-[20px]"
+        data-modal-info
+      >
+        {{cardsInfo.duration}}
+      </p>
+      <p class="mb-[10px] text-[32px] font-bold xl:mb-[11px] xl:text-[40px]" data-modal-info>
+        {{cardsInfo.perMonth}}
+      </p>
+      <p class="text-[16px] font-medium xl:text-[23px]" data-modal-info>
+        {{cardsInfo.currencySymbol}}/{{cardsInfo.perMonthText}}
+      </p>
+      {% if cardsInfo.discount.length > 0 %}
+      <p
+        class="mb-[30px] mt-[12px] text-[20px] font-semibold leading-[1.2] text-[#FF6565] underline xl:mb-[35px] xl:mt-[13px] xl:text-[25px]"
+      >
+        {{cardsInfo.profit.text}} {{cardsInfo.profit.value}}{{cardsInfo.currencySymbol}}
+      </p>
+      <p class="mb-3 text-[24px] font-semibold xl:mb-[14px] xl:text-[32px]" data-modal-info>
+        {{cardsInfo.totalNewPrice}} {{cardsInfo.currencySymbol}}
+      </p>
+      <p class="text-[16px] line-through opacity-50 xl:text-[20px]" data-modal-info>
+        {{cardsInfo.totalOldPrice}} {{cardsInfo.currencySymbol}}
+      </p>
+      <div
+        class="absolute right-[-103px] top-[37px] h-[102px] w-[132px] -rotate-45 rounded-tl-[30px] bg-[#FF6565] xl:right-[-128px] xl:top-[46px] xl:h-[127px] xl:w-[164px] xl:rounded-tl-[36px]"
+      >
+        <span
+          class="absolute left-[10px] top-[18px] inline-block rotate-45 text-[16px] font-semibold text-white xl:left-[12px] xl:top-[22px] xl:text-[20px]"
+          data-modal-info
+          >-{{cardsInfo.discount}}%</span
+        >
+      </div>
+      {% endif %}
+    </div>
+    <div
+      class="border-t-[1px] border-black/20 pt-[5px] text-[12px] leading-normal text-[#202020] xl:pt-[6px] xl:text-[16px]"
+    >
+      <p>{{cardsInfo.description.text}}</p>
+      <ul>
+        {% for item in cardsInfo.description.toDo %}
+        <li>{{cardsInfo.description.symbol}} {{item}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div>
+    <button
+      class="btn offer-payment-cardsInfo__btn mx-auto mb-4 h-[39px] w-[203px] xl:mb-5 xl:h-[48px] xl:w-[251px] xl:rounded-[26px] xl:text-[16px]"
+      type="button "
+      aria-label="{{  cardsInfo.button.ariaLabel }}"
+      data-modal-pay-open
+    >
+      {{ cardsInfo.button.text }}
+    </button>
+    <ul class="flex flex-row justify-center gap-8 xl:gap-[42px]">
+      {% for link in cardsInfo.payLinks %}
+      <li class="h-[39px] w-[60px] xl:h-[49px] xl:w-[76px]">
+        <button
+          type="button"
+          data-modal-pay-open
+          aria-label="{{  link.ariaLabel }}"
+          class="h-full w-full"
+        >
+          <svg aria-label="{{ link.alt }}" width="60" height="39" class="h-full w-full">
+            <use href="./assets/images/sprite.svg#{{link.id}}"></use>
+          </svg>
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% endmacro %}

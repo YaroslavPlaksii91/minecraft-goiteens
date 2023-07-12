@@ -70,6 +70,9 @@ $(window).on('load', async function () {
       {
         formId: 'modalForm',
       },
+      {
+        formId: 'modalFormPayment',
+      },
       // {
       // formId: 'yourFormId',
       // productName: 'yourProductName',

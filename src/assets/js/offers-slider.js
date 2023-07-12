@@ -1,7 +1,7 @@
 import 'slick-carousel';
 import $ from 'jquery';
 
-$('.reviews-slider').slick({
+$('.offers-slider').slick({
   centerMode: true,
   variableWidth: true,
   mobileFirst: true,
@@ -13,11 +13,9 @@ $('.reviews-slider').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 767.98,
+      breakpoint: 1279.98,
       settings: {
         slidesToShow: 3,
-        infinite: false,
-        arrows: false,
         centerMode: false,
       },
     },
