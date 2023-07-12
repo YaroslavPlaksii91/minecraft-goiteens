@@ -1,6 +1,5 @@
 const section = document.querySelector('.offers');
 const promoForm = document.querySelectorAll('[data-promo]');
-const sliders = document.querySelectorAll('.offers-slider');
 
 const showCardInfo = e => {
   const card = e.target.closest('.offer-card');
@@ -9,6 +8,7 @@ const showCardInfo = e => {
     moreCardInfo: card.querySelector('[data-more-info]'),
     hideText: card.querySelector('[data-hide]'),
     paymentCurrencyBtn: card.querySelector('[data-promocode]'),
+    sliders: card.querySelectorAll('.offers-slider'),
   };
 
   const isShowMoreBtn = e.target.hasAttribute('data-show-more');
@@ -32,7 +32,7 @@ const showCardInfo = e => {
 
     const idCurrentCurrency = e.target.getAttribute('data-currency');
 
-    sliders.forEach(slider => {
+    refs.sliders.forEach(slider => {
       const currentSliderCurrency = slider.getAttribute('data-slider');
 
       currentSliderCurrency !== idCurrentCurrency

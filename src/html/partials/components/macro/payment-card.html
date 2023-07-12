@@ -1,4 +1,4 @@
-{% macro card(cardsInfo) %}
+{% macro card(cardsInfo, course) %}
 
 <div
   class="offer-payment-card !flex min-h-[535px] max-w-[272px] flex-col justify-between overflow-hidden rounded-[10px] px-[19px] pb-[35px] pt-[26px] xl:h-[670px] xl:!w-[336px] xl:max-w-none xl:rounded-[12px] xl:px-[24px] xl:pb-[43px] xl:pt-[32px]"
@@ -6,15 +6,17 @@
 >
   <div>
     <div class="relative flex min-h-[253px] flex-col items-center leading-[1.1] xl:mb-[14px]">
+      <h3 class="visually-hidden" data-modal-info>{{course}}</h3>
       <p
         class="mb-5 flex h-[39px] w-[133px] items-center justify-center rounded-[21px] bg-white text-[16px] font-bold leading-[1.2] xl:mb-[25px] xl:h-[48px] xl:w-[165px] xl:text-[20px]"
+        data-modal-info
       >
         {{cardsInfo.duration}}
       </p>
-      <p class="mb-[10px] text-[32px] font-bold xl:mb-[11px] xl:text-[40px]">
+      <p class="mb-[10px] text-[32px] font-bold xl:mb-[11px] xl:text-[40px]" data-modal-info>
         {{cardsInfo.perMonth}}
       </p>
-      <p class="text-[16px] font-medium xl:text-[23px]">
+      <p class="text-[16px] font-medium xl:text-[23px]" data-modal-info>
         {{cardsInfo.currencySymbol}}/{{cardsInfo.perMonthText}}
       </p>
       {% if cardsInfo.discount.length > 0 %}
@@ -23,10 +25,10 @@
       >
         {{cardsInfo.profit.text}} {{cardsInfo.profit.value}}{{cardsInfo.currencySymbol}}
       </p>
-      <p class="mb-3 text-[24px] font-semibold xl:mb-[14px] xl:text-[32px]">
+      <p class="mb-3 text-[24px] font-semibold xl:mb-[14px] xl:text-[32px]" data-modal-info>
         {{cardsInfo.totalNewPrice}} {{cardsInfo.currencySymbol}}
       </p>
-      <p class="text-[16px] line-through opacity-50 xl:text-[20px]">
+      <p class="text-[16px] line-through opacity-50 xl:text-[20px]" data-modal-info>
         {{cardsInfo.totalOldPrice}} {{cardsInfo.currencySymbol}}
       </p>
       <div
@@ -34,6 +36,7 @@
       >
         <span
           class="absolute left-[10px] top-[18px] inline-block rotate-45 text-[16px] font-semibold text-white xl:left-[12px] xl:top-[22px] xl:text-[20px]"
+          data-modal-info
           >-{{cardsInfo.discount}}%</span
         >
       </div>

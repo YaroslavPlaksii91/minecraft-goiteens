@@ -24,7 +24,20 @@
   color: #ea3324;
 }
 
-.modal-info-payment {
+.modal-payment {
+  @extend .modal;
+  padding: 20px;
+  @include mq(tablet) {
+    max-width: 640px;
+    padding: 36px 70px;
+  }
+  @include mq(desktop) {
+    max-width: 1095px;
+    padding: 24px 55px 50px 55px;
+  }
+}
+
+.modal-payment-info {
   li:nth-last-child(2) {
     span {
       color: #e05744;
@@ -36,5 +49,12 @@
     p {
       color: #6b9429;
     }
+  }
+}
+
+.modal-payment-oneMonth {
+  color: #6e6e6e !important;
+  & + span {
+    color: #e05744 !important;
   }
 }

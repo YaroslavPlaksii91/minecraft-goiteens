@@ -1,2 +1,15 @@
-{% extends './form.html' %} {% block formFields %} {% import './macro/input.html' as fields %} {%
-for field in form.inputs %} {{ fields.inputField(field, formId) }} {% endfor %} {% endblock %}
+{% extends './form.html' %}
+{% block formFields %}
+{% import './macro/input.html' as fields %}
+
+  {% if formId === 'modalFormPayment' %}
+    {% for field in formPayment.inputs %}
+      {{ fields.inputField(field, formId) }}
+    {% endfor %}
+  {% else %}
+    {% for field in form.inputs %}
+      {{ fields.inputField(field, formId) }}
+    {% endfor %}
+  {% endif %}
+
+{% endblock %}

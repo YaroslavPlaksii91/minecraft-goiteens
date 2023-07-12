@@ -1,16 +1,14 @@
 {% set formId = formPayment.id %} {% set info = formPayment.coastInfo %}
 <div class="backdrop is-hidden smOnly:px-5" data-modal-pay>
-  <div
-    class="modal bg-white !p-5 text-black-light md:!max-w-[640px] md:!px-[88px] md:!pb-[46px] md:!pt-6"
-  >
+  <div class="modal-payment bg-white text-black-light">
     <button
       class="modal-close-btn"
       type="button"
-      data-modal-close
+      data-modal-pay-close
       aria-label="{{formPayment.btnCloseAria}}"
     >
       <svg
-        class="modal-btn-close-svg md:h-8 md:w-8"
+        class="modal-btn-close-svg"
         width="24"
         height="24"
         aria-label="{{formPayment.btnCloseAria}}"
@@ -18,22 +16,27 @@
         <use href="./assets/images/sprite.svg#icon-close-menu"></use>
       </svg>
     </button>
-
     <h2
-      class="mb-[15px] text-[16px] font-bold uppercase leading-[1.5] md:mb-9 md:text-center md:text-[22px] xl:mb-[33px] xl:text-[28px] smOnly:max-w-[210px] mdOnly:leading-loose"
+      class="mb-5 text-[16px] font-bold uppercase leading-[1.5] md:mb-9 md:text-center md:text-[22px] xl:mb-[33px] xl:text-[28px] smOnly:max-w-[210px] mdOnly:leading-loose"
     >
       {{ formPayment.title }}
     </h2>
 
-    <ul class="modal-info-payment text-[14px] leading-[0.92] md:text-[18px]">
-      {% for infoItem in info %}
-      <li class="mb-[10px] flex gap-[10px] last:mb-0 md:mb-3 md:gap-3">
-        <p class="min-w-[100px] text-[#6e6e6e] md:min-w-[120px]">{{infoItem}}:</p>
-        <span class="font-bold">64500</span>
-      </li>
-      {% endfor %}
-    </ul>
+    <div class="xl:flex xl:flex-row">
+      <ul
+        class="modal-payment-info mb-5 text-[14px] md:text-[18px] xl:mb-0 xl:min-w-[45%] xl:pt-[30px] xl:text-[22px] smOnly:leading-[0.92]"
+      >
+        {% for infoItem in info %}
+        <li class="mb-[10px] flex gap-[10px] last:mb-0 md:mb-3 md:gap-3">
+          <p class="min-w-[100px] text-right text-[#6e6e6e] md:min-w-[120px] xl:min-w-[160px]">
+            {{infoItem}}:
+          </p>
+          <span class="font-bold" data-modal-info></span>
+        </li>
+        {% endfor %}
+      </ul>
 
-    {% include './formFields.njk' %}
+      {% include './formFields.njk' %}
+    </div>
   </div>
 </div>

@@ -42,7 +42,8 @@
           <h3
             class="mb-[10px] text-[20px] font-semibold md:mb-[14px] md:text-[24px] xl:mb-5 xl:text-[32px]"
           >
-            <span class="font-normal">{{course.title.textFirst}}</span> {{course.title.courseName}}
+            <span class="font-normal">{{course.title.textFirst}}</span>
+            «{{course.title.courseName}}»
           </h3>
           <p data-hide class="text-[16px] font-semibold md:text-[20px] xl:text-[24px]">
             {{course.text}}
@@ -90,7 +91,8 @@
           <h3
             class="mb-5 text-center text-[14px] font-semibold md:mb-[19px] md:text-[20px] xl:mb-[22px] xl:text-[36px]"
           >
-            <span class="font-normal">{{course.title.textSecond}}</span> {{course.title.courseName}}
+            <span class="font-normal">{{course.title.textSecond}}</span>
+            «{{course.title.courseName}}»
           </h3>
           <button
             data-modal-open
@@ -110,7 +112,8 @@
           <h3
             class="sr-only md:not-sr-only md:mb-[30px] md:text-center md:text-[20px] md:font-semibold xl:mb-[42px] xl:text-[36px]"
           >
-            <span class="font-normal">{{course.title.textThird}}</span> {{course.title.courseName}}
+            <span class="font-normal">{{course.title.textThird}}</span>
+            «{{course.title.courseName}}»
           </h3>
           <div class="mb-5 md:mb-[35px] xl:mb-[46px] xl:flex xl:flex-col-reverse">
             <!-- Promo part -->
@@ -162,7 +165,8 @@
               class="offers-slider {% if slider.id !== defaultCurrency %} hidden-slider {% endif %} xl:mb-[31px]"
               data-slider="{{ slider.id }}"
             >
-              {% for cardSlide in slider.list %} {{ cardPay.card(cardSlide) }} {% endfor %}
+              {% for cardSlide in slider.list %} {{ cardPay.card(cardSlide, course.title.courseName)
+              }} {% endfor %}
             </div>
             {% endfor %}
             <!-- End slider part -->
