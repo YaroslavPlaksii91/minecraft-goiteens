@@ -27,7 +27,7 @@ main {
 }
 
 .btn {
-  @apply flex items-center justify-center rounded-[36px] border-0 bg-green text-sm font-medium leading-[1.2] text-primary shadow-btn duration-300 hover:bg-green-hover focus:bg-green-hover xl:text-[24px];
+  @apply flex items-center justify-center rounded-[22px] border-0 bg-green text-sm font-medium leading-[1.2] text-primary shadow-btn duration-300 hover:bg-green-hover focus:bg-green-hover md:rounded-[20px] xl:rounded-[36px] xl:text-[24px];
 }
 
 .visually-hidden {

@@ -19,7 +19,6 @@ $('.reviews-slider').slick({
         infinite: false,
         arrows: false,
         centerMode: false,
-        // variableWidth: false,
       },
     },
   ],

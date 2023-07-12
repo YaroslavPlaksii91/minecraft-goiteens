@@ -41,6 +41,10 @@ module.exports = {
           light: '#202020', // class="bg-black-light text-black-light border-black-light"
           dark: '#010101',
         },
+        courses: {
+          salad: '#DCF5BD', // class="bg-courses-salad
+          beige: '#FFE9C9', // class="bg-courses-beige
+        },
         green: {
           DEFAULT: '#8BDB62', // class="bg-green text-green border-green"
           hover: '#B9F19D', // class="bg-green-hover  text-green-hover border-green-hover"

@@ -18,3 +18,18 @@
     @apply translate-y-full scale-0;
   }
 }
+
+.modal-info-payment {
+  li:nth-last-child(2) {
+    span {
+      color: #e05744;
+    }
+  }
+
+  li:last-of-type {
+    color: #6b9429;
+    p {
+      color: #6b9429;
+    }
+  }
+}

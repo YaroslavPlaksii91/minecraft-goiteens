@@ -1,0 +1,182 @@
+{% set section = offers %} {% import '../components/macro/payment-card.html' as cardPay %}
+
+<!-- Default currency -->
+{% set defaultCurrency = 'UAH' %}
+
+<section class="{{section.id}} section">
+  <div class="container">
+    <h2 class="section-title mb-4 md:mb-3 xl:mb-5">{{section.title}}</h2>
+    <p
+      class="mb-[27px] text-center text-[14px] leading-[1.3] md:mx-auto md:mb-[28px] md:w-[593px] md:text-[16px] xl:mb-[45px] xl:w-[734px] xl:text-[20px]"
+    >
+      {{section.description}}
+    </p>
+    <ul>
+      {% for course in section.courses %}
+      <li
+        class="offer-card mb-5 px-[19px] py-[34px] leading-[1.3] last:mb-0 md:mb-[28px] md:p-10 xl:mb-[29px] xl:p-[61px]"
+      >
+        <!-- Start course card front view-->
+        <div class="relative">
+          <button
+            class="offers-open-btn absolute right-[-2px] top-[-4px] flex h-8 items-center text-[14px] font-semibold leading-[1.3] duration-300 md:right-10 md:h-[50px] md:text-[16px] xl:right-[61px] xl:h-14 xl:text-[24px]"
+            type="button"
+            data-show-more
+          >
+            {{section.button.open}}
+            <svg
+              aria-label="{{section.button.ariaLabel}}"
+              width="32"
+              height="32"
+              class="ml-4 h-full w-full"
+              data-show-more
+            >
+              <use data-show-more href="./assets/images/sprite.svg#icon-course-btn"></use>
+            </svg>
+          </button>
+          <p
+            class="offer-card__age mb-[24px] inline-block rounded-[18px] px-[14px] py-1 text-[12px] font-semibold md:mb-[10px] md:rounded-[30px] md:px-[22px] md:py-[7px] md:text-[16px] xl:px-5 xl:text-[24px]"
+          >
+            {{course.age}}
+          </p>
+          <h3
+            class="mb-[10px] text-[20px] font-semibold md:mb-[14px] md:text-[24px] xl:mb-5 xl:text-[32px]"
+          >
+            <span class="font-normal">{{course.title.textFirst}}</span> {{course.title.courseName}}
+          </h3>
+          <p data-hide class="text-[16px] font-semibold md:text-[20px] xl:text-[24px]">
+            {{course.text}}
+          </p>
+        </div>
+        <!-- End course card front view -->
+
+        <!-- Hidden part course's card info -->
+        <div
+          data-more-info
+          class="visually-hidden mt-5 md:border-t-[1px] md:border-black/50 md:pt-[42px] xl:mt-[27px] xl:pt-[44px]"
+        >
+          <!-- Lists advantages -->
+          <div class="mb-[35px] md:mb-[45px] md:flex md:gap-[15px] xl:mb-[79px] xl:gap-[26px]">
+            {% for list in course.courseInfo %}
+            <ul class="offer-advantage first:mb-5 md:min-w-[205px] md:first:mb-0 xl:min-w-[344px]">
+              {% for item in list %}
+              <li
+                class="offer-advantage__item mb-5 pl-[52px] last:mb-0 md:mb-[32px] md:pl-[45px] xl:mb-[52px] xl:pl-[77px]"
+              >
+                <h4
+                  class="mb-1 text-[16px] font-semibold md:text-[14px] xl:mb-[14px] xl:text-[24px]"
+                >
+                  {{item.title}}
+                </h4>
+                {% if item.text.length === 1 %} {% for text in item.text %}
+                <p class="text-[12px] xl:text-[20px]">{{text}}</p>
+                {% endfor %} {% else %}
+                <ul
+                  class="list-disc pl-5 text-[12px] marker:text-[8px] md:pl-0 xl:text-[20px] xl:marker:text-[10px]"
+                >
+                  {% for description in item.text %}
+                  <li class="mb-1 last:mb-0 md:mb-[7px] xl:mb-3">{{description}}</li>
+                  {% endfor %}
+                </ul>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+            {% endfor %}
+          </div>
+          <!--End lists advantages -->
+
+          <!-- Part Sign up the course -->
+          <h3
+            class="mb-5 text-center text-[14px] font-semibold md:mb-[19px] md:text-[20px] xl:mb-[22px] xl:text-[36px]"
+          >
+            <span class="font-normal">{{course.title.textSecond}}</span> {{course.title.courseName}}
+          </h3>
+          <button
+            data-modal-open
+            type="button"
+            class="btn mx-auto mb-[38px] h-[42px] w-[190px] md:mb-[39px] xl:mb-[56px] xl:h-[68px] xl:w-[262px]"
+          >
+            {{course.button}}
+          </button>
+          <p
+            class="offer-card__attention mb-[38px] pl-[53px] text-[12px] md:mb-[65px] md:pl-[46px] md:text-[14px] xl:mb-[41px] xl:pl-[86px] xl:text-[20px]"
+          >
+            {{course.textAttention}}
+          </p>
+          <!-- End part Sign up the course -->
+
+          <!-- Start part offers plan -->
+          <h3
+            class="sr-only md:not-sr-only md:mb-[30px] md:text-center md:text-[20px] md:font-semibold xl:mb-[42px] xl:text-[36px]"
+          >
+            <span class="font-normal">{{course.title.textThird}}</span> {{course.title.courseName}}
+          </h3>
+          <div class="mb-5 md:mb-[35px] xl:mb-[46px] xl:flex xl:flex-col-reverse">
+            <!-- Promo part -->
+            <div
+              class="mb-[23px] md:mb-[29px] xl:mb-0 xl:flex xl:flex-row-reverse xl:justify-around xl:gap-[35px]"
+            >
+              {% set form = course.offersPlan.promo %}
+              <form
+                action=""
+                novalidate
+                data-promo
+                class="mb-5 flex flex-col items-center md:mb-[35px] md:flex-row md:justify-center xl:mb-0"
+              >
+                <input
+                  class="mb-[19px] min-w-[220px] border-b-[1px] border-green p-2 outline-green placeholder:text-center placeholder:text-[16px] placeholder:uppercase placeholder:leading-normal placeholder:text-[#747474] md:mb-0 md:mr-[22px] md:w-[240px] md:text-[16px] xl:mr-[26px] xl:w-[260px] xl:text-[20px] xl:placeholder:text-[20px]"
+                  type="{{ form.input.type }}"
+                  name="{{ form.input.name }}"
+                  placeholder="{{ form.input.placeholder }}"
+                  required="{{ form.input.required }}"
+                />
+                <button
+                  class="btn h-[42px] w-[190px] xl:h-[48px] xl:w-[251px] xl:rounded-[26px] xl:text-[16px]"
+                  type="submit "
+                >
+                  {{ form.btnSubmit }}
+                </button>
+              </form>
+              <ul class="offers-payments mx-auto flex justify-center xl:mx-0">
+                {% for payment in course.offersPlan.payments %}
+                <li>
+                  <button
+                    class="{% if payment.currency === defaultCurrency %} active {% endif %} h-[48px] w-[103px] cursor-pointer border-y-[1px] border-[#EDEDED] bg-transparent text-[20px] text-[#999] md:w-[110px]"
+                    type="button"
+                    aria-label="{{ payment.ariaLabel }}"
+                    data-currency="{{ payment.currency }}"
+                    data-promocode
+                  >
+                    {{ payment.text }}
+                  </button>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <!--End promo part -->
+
+            <!-- Start slider part -->
+            {% for slider in course.offersPlan.paymentSlider %}
+            <div
+              class="offers-slider {% if slider.id !== defaultCurrency %} hidden-slider {% endif %} xl:mb-[31px]"
+              data-slider="{{ slider.id }}"
+            >
+              {% for cardSlide in slider.list %} {{ cardPay.card(cardSlide) }} {% endfor %}
+            </div>
+            {% endfor %}
+            <!-- End slider part -->
+          </div>
+          <!-- End part offers plan -->
+          <p
+            class="text-center text-[14px] font-normal leading-[1.4] md:text-[16px] xl:mx-auto xl:w-[683px] xl:text-[20px]"
+          >
+            {{course.textPost}}
+          </p>
+        </div>
+        <!--End hidden part course's card info -->
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
