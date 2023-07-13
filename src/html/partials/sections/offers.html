@@ -17,7 +17,7 @@
         class="offer-card mb-5 px-[19px] py-[34px] leading-[1.3] last:mb-0 md:mb-[28px] md:p-10 xl:mb-[29px] xl:p-[61px]"
       >
         <!-- Start course card front view-->
-        <div class="relative">
+        <div class="relative" data-hide>
           <button
             class="offers-open-btn absolute right-[-2px] top-[-4px] flex h-8 items-center text-[14px] font-semibold leading-[1.3] duration-300 md:right-10 md:h-[50px] md:text-[16px] xl:right-[61px] xl:h-14 xl:text-[24px]"
             type="button"
@@ -45,16 +45,14 @@
             <span class="font-normal">{{course.title.textFirst}}</span>
             «{{course.title.courseName}}»
           </h3>
-          <p data-hide class="text-[16px] font-semibold md:text-[20px] xl:text-[24px]">
-            {{course.text}}
-          </p>
+          <p class="text-[16px] font-semibold md:text-[20px] xl:text-[24px]">{{course.text}}</p>
         </div>
         <!-- End course card front view -->
 
         <!-- Hidden part course's card info -->
         <div
           data-more-info
-          class="visually-hidden mt-5 md:border-t-[1px] md:border-black/50 md:pt-[42px] xl:mt-[27px] xl:pt-[44px]"
+          class="visually-hidden md:border-t-[1px] md:border-black/50 md:pt-[42px] xl:pt-[44px]"
         >
           <!-- Lists advantages -->
           <div class="mb-[35px] md:mb-[45px] md:flex md:gap-[15px] xl:mb-[79px] xl:gap-[26px]">
@@ -145,7 +143,7 @@
                 {% for payment in course.offersPlan.payments %}
                 <li>
                   <button
-                    class="{% if payment.currency === defaultCurrency %} active {% endif %} h-[48px] w-[103px] cursor-pointer border-y-[1px] border-[#EDEDED] bg-transparent text-[20px] text-[#999] md:w-[110px]"
+                    class="{% if payment.currency === defaultCurrency %} active {% endif %} h-9 w-[80px] cursor-pointer border-y-[1px] border-[#EDEDED] bg-transparent text-[14px] text-[#999] md:h-[48px] md:w-[110px] md:text-[20px] smOnly:max-w-[103px]"
                     type="button"
                     aria-label="{{ payment.ariaLabel }}"
                     data-currency="{{ payment.currency }}"

@@ -1,7 +1,7 @@
 {% macro card(cardsInfo, course) %}
 
 <div
-  class="offer-payment-card !flex min-h-[535px] max-w-[272px] flex-col justify-between overflow-hidden rounded-[10px] px-[19px] pb-[35px] pt-[26px] xl:h-[670px] xl:!w-[336px] xl:max-w-none xl:rounded-[12px] xl:px-[24px] xl:pb-[43px] xl:pt-[32px]"
+  class="offer-payment-card !flex min-h-[535px] flex-col justify-between overflow-hidden rounded-[10px] px-[19px] pb-[35px] pt-[26px] xl:h-[670px] xl:max-w-none xl:rounded-[12px] xl:px-[24px] xl:pb-[43px] xl:pt-[32px]"
   data-currency="{{cardsInfo.id}}"
 >
   <div>
@@ -55,7 +55,7 @@
   </div>
   <div>
     <button
-      class="btn offer-payment-cardsInfo__btn mx-auto mb-4 h-[39px] w-[203px] xl:mb-5 xl:h-[48px] xl:w-[251px] xl:rounded-[26px] xl:text-[16px]"
+      class="btn mx-auto mb-4 h-[39px] w-[203px] xl:mb-5 xl:h-[48px] xl:w-[251px] xl:rounded-[26px] xl:text-[16px]"
       type="button "
       aria-label="{{  cardsInfo.button.ariaLabel }}"
       data-modal-pay-open
