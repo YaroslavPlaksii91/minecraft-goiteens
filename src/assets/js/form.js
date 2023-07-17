@@ -70,6 +70,9 @@ $(window).on('load', async function () {
       {
         formId: 'modalForm',
       },
+      {
+        formId: 'modalFormPayment',
+      },
       // {
       // formId: 'yourFormId',
       // productName: 'yourProductName',
@@ -307,7 +310,7 @@ telegram backend. */
                   service.showSuccess(service.translate('reply'), true, loading, true);
 
                   /* That redirects user to some URL after send form. */
-                  // window.location.href = 'someURL';
+                  window.location.href = 'https://goiteens.com/course/minecraft/success/';
                 } else {
                   console.log('error ', resp.statusText);
                   $(form).css('display', 'block');

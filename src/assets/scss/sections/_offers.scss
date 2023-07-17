@@ -1,0 +1,521 @@
+.offer-card {
+  background-color: #ffff;
+  border-radius: 18px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.16);
+  @include mq(tablet) {
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+  @include mq(desktop) {
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .tab-hide {
+    margin-bottom: 20px;
+    @include mq(tablet) {
+      h3 {
+        margin-bottom: 0;
+      }
+
+      p:last-of-type {
+        position: absolute !important;
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+      }
+    }
+    @include mq(desktop) {
+      margin-bottom: 27px;
+    }
+  }
+
+  .offer-payment-card {
+    width: 242px !important;
+    @media screen and (min-width: 375px) {
+      width: 272px !important;
+    }
+    @include mq(desktop) {
+      width: 336px !important;
+    }
+  }
+
+  &:nth-child(1) {
+    .offer-card__age {
+      @apply bg-courses-salad;
+    }
+    .offer-payment-card {
+      @apply bg-courses-salad;
+
+      &__btn {
+        box-shadow: 0px 2px 6px 0px rgba(0, 9, 40, 0.2);
+      }
+    }
+  }
+  &:nth-child(2) {
+    .offer-card__age {
+      @apply bg-courses-beige;
+    }
+    .offer-payment-card {
+      @apply bg-courses-beige;
+
+      &__btn {
+        box-shadow: 0px 2px 6px 0px rgba(0, 9, 40, 0.2);
+      }
+    }
+  }
+
+  .offer-advantage {
+    &:nth-child(2) > li {
+      @include mq(mobile-only) {
+        &:first-of-type {
+          margin-bottom: 54px;
+        }
+      }
+
+      @include mq(tablet) {
+        &:first-of-type {
+          margin-bottom: 20px;
+        }
+      }
+      @include mq(desktop) {
+        &:first-of-type {
+          margin-bottom: 23px;
+        }
+      }
+    }
+
+    &__item {
+      position: relative;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+
+        left: 0;
+        top: 0;
+
+        width: 32px;
+        height: 32px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &:nth-child(1) {
+      .offer-advantage__item {
+        &:nth-child(1) {
+          &::before {
+            background-image: url(../images/offers/advantage-first-1-mob.png);
+            @include mq(retina) {
+              background-image: url(../images/offers/advantage-first-1-mob@2x.png);
+            }
+            @supports (background-image: url(../images/offers/advantage-first-1-mob.webp)) {
+              background-image: url(../images/offers/advantage-first-1-mob.webp);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-first-1-mob@2x.webp);
+              }
+            }
+            @include mq(desktop) {
+              width: 52px;
+              height: 52px;
+
+              background-image: url(../images/offers/advantage-first-1-desk.png);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-first-1-desk@2x.png);
+              }
+              @supports (background-image: url(../images/offers/advantage-first-1-desk.webp)) {
+                background-image: url(../images/offers/advantage-first-1-desk.webp);
+                @include mq(retina) {
+                  background-image: url(../images/offers/advantage-first-1-desk@2x.webp);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            background-image: url(../images/offers/advantage-first-2-mob.png);
+            @include mq(retina) {
+              background-image: url(../images/offers/advantage-first-2-mob@2x.png);
+            }
+            @supports (background-image: url(../images/offers/advantage-first-2-mob.webp)) {
+              background-image: url(../images/offers/advantage-first-2-mob.webp);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-first-2-mob@2x.webp);
+              }
+            }
+            @include mq(desktop) {
+              width: 52px;
+              height: 52px;
+
+              background-image: url(../images/offers/advantage-first-2-desk.png);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-first-2-desk@2x.png);
+              }
+              @supports (background-image: url(../images/offers/advantage-first-2-desk.webp)) {
+                background-image: url(../images/offers/advantage-first-2-desk.webp);
+                @include mq(retina) {
+                  background-image: url(../images/offers/advantage-first-2-desk@2x.webp);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            background-image: url(../images/offers/advantage-first-3-mob.png);
+            @include mq(retina) {
+              background-image: url(../images/offers/advantage-first-3-mob@2x.png);
+            }
+            @supports (background-image: url(../images/offers/advantage-first-3-mob.webp)) {
+              background-image: url(../images/offers/advantage-first-3-mob.webp);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-first-3-mob@2x.webp);
+              }
+            }
+            @include mq(desktop) {
+              width: 52px;
+              height: 52px;
+
+              background-image: url(../images/offers/advantage-first-3-desk.png);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-first-3-desk@2x.png);
+              }
+              @supports (background-image: url(../images/offers/advantage-first-3-desk.webp)) {
+                background-image: url(../images/offers/advantage-first-3-desk.webp);
+                @include mq(retina) {
+                  background-image: url(../images/offers/advantage-first-3-desk@2x.webp);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(4) {
+          &::before {
+            background-image: url(../images/offers/advantage-first-4-mob.png);
+            @include mq(retina) {
+              background-image: url(../images/offers/advantage-first-4-mob@2x.png);
+            }
+            @supports (background-image: url(../images/offers/advantage-first-4-mob.webp)) {
+              background-image: url(../images/offers/advantage-first-4-mob.webp);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-first-4-mob@2x.webp);
+              }
+            }
+            @include mq(desktop) {
+              width: 52px;
+              height: 52px;
+
+              background-image: url(../images/offers/advantage-first-4-desk.png);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-first-4-desk@2x.png);
+              }
+              @supports (background-image: url(../images/offers/advantage-first-4-desk.webp)) {
+                background-image: url(../images/offers/advantage-first-4-desk.webp);
+                @include mq(retina) {
+                  background-image: url(../images/offers/advantage-first-4-desk@2x.webp);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .offer-advantage__item {
+        &:nth-child(1) {
+          &::before {
+            background-image: url(../images/offers/advantage-second-1-mob.png);
+            @include mq(retina) {
+              background-image: url(../images/offers/advantage-second-1-mob@2x.png);
+            }
+            @supports (background-image: url(../images/offers/advantage-second-1-mob.webp)) {
+              background-image: url(../images/offers/advantage-second-1-mob.webp);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-second-1-mob@2x.webp);
+              }
+            }
+            @include mq(desktop) {
+              width: 52px;
+              height: 52px;
+
+              background-image: url(../images/offers/advantage-second-1-desk.png);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-second-1-desk@2x.png);
+              }
+              @supports (background-image: url(../images/offers/advantage-second-1-desk.webp)) {
+                background-image: url(../images/offers/advantage-second-1-desk.webp);
+                @include mq(retina) {
+                  background-image: url(../images/offers/advantage-second-1-desk@2x.webp);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            background-image: url(../images/offers/advantage-second-2-mob.png);
+            @include mq(retina) {
+              background-image: url(../images/offers/advantage-second-2-mob@2x.png);
+            }
+            @supports (background-image: url(../images/offers/advantage-second-2-mob.webp)) {
+              background-image: url(../images/offers/advantage-second-2-mob.webp);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-second-2-mob@2x.webp);
+              }
+            }
+            @include mq(desktop) {
+              width: 52px;
+              height: 52px;
+
+              background-image: url(../images/offers/advantage-second-2-desk.png);
+              @include mq(retina) {
+                background-image: url(../images/offers/advantage-second-2-desk@2x.png);
+              }
+              @supports (background-image: url(../images/offers/advantage-second-2-desk.webp)) {
+                background-image: url(../images/offers/advantage-second-2-desk.webp);
+                @include mq(retina) {
+                  background-image: url(../images/offers/advantage-second-2-desk@2x.webp);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__attention {
+    position: relative;
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+
+      left: 11px;
+      top: 3px;
+
+      width: 32px;
+      height: 48px;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      background-image: url(../images/offers/attention-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/offers/attention-mob@2x.png);
+      }
+      @supports (background-image: url(../images/offers/attention-mob.webp)) {
+        background-image: url(../images/offers/attention-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/offers/attention-mob@2x.webp);
+        }
+      }
+      @include mq(tablet) {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include mq(desktop) {
+        width: 41px;
+        height: 61px;
+
+        left: 15px;
+
+        background-image: url(../images/offers/attention-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/offers/attention-desk@2x.png);
+        }
+        @supports (background-image: url(../images/offers/attention-desk.webp)) {
+          background-image: url(../images/offers/attention-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/offers/attention-desk@2x.webp);
+          }
+        }
+      }
+    }
+  }
+}
+
+.offers-open-btn {
+  svg {
+    filter: drop-shadow(0px 2px 8px rgba(0, 9, 40, 0.2));
+    transition-duration: 300ms;
+    color: #8adb62;
+  }
+  &:hover {
+    svg {
+      color: #b9f19d;
+    }
+  }
+
+  @include mq(tablet) {
+    top: 33px;
+  }
+  @include mq(desktop) {
+    top: 46px;
+  }
+}
+
+.open {
+  svg {
+    transform: rotate(90deg);
+  }
+}
+
+.invalid-promo {
+  &::placeholder {
+    font-size: 12px !important;
+    color: red !important;
+    text-transform: none !important;
+    @include mq(desktop) {
+      font-size: 16px !important;
+    }
+  }
+}
+
+.offers-payments {
+  li {
+    &:first-of-type {
+      button {
+        border-width: 1px 0 1px 1px;
+        border-top-left-radius: 144px;
+        border-bottom-left-radius: 144px;
+      }
+    }
+    &:last-of-type {
+      button {
+        border-width: 1px 1px 1px 0;
+        border-top-right-radius: 144px;
+        border-bottom-right-radius: 144px;
+      }
+    }
+  }
+
+  & .active {
+    color: #000000;
+    background-color: #8adb62;
+  }
+}
+
+/*! purgecss start ignore */
+.offers-slider {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  // transition: opacity 50ms linear, visibility 50ms linear;
+
+  padding-bottom: 65px;
+  @include mq(tablet) {
+    padding-bottom: 93px;
+  }
+  @include mq(desktop) {
+    padding-bottom: 0px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    display: inline-block;
+
+    width: 42px;
+    height: 42px;
+
+    top: 100%;
+    transform: translate(0, -42px);
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+
+      width: 42px;
+      height: 42px;
+
+      top: 0px;
+      left: 0px;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @include mq(tablet) {
+      width: 54px;
+      height: 54px;
+
+      transform: translate(0, -54px);
+      &::before {
+        width: 54px;
+        height: 54px;
+      }
+    }
+
+    @include mq(desktop) {
+      width: 23px;
+      height: 38px;
+
+      top: 50%;
+      transform: translate(0, -50%);
+      &::before {
+        width: 23px;
+        height: 38px;
+      }
+    }
+  }
+
+  .slick-prev {
+    left: calc(50% - 42px - 5px);
+    &::before {
+      background-image: url(../images/reviews/arrow-prev.svg);
+    }
+    @include mq(tablet) {
+      left: calc(50% - 54px - 6px);
+    }
+    @include mq(desktop) {
+      left: calc(0% - 23px - 10px);
+      &::before {
+        background-image: url(../images/offers/arrow-prev-desk.svg);
+      }
+    }
+  }
+  .slick-next {
+    right: calc(50% - 42px - 5px);
+    &::before {
+      background-image: url(../images/reviews/arrow-next.svg);
+    }
+    @include mq(tablet) {
+      right: calc(50% - 54px - 6px);
+    }
+    @include mq(desktop) {
+      left: calc(100% + 10px);
+      &::before {
+        background-image: url(../images/offers/arrow-next-desk.svg);
+      }
+    }
+  }
+
+  .slick-slide {
+    margin: 0px 10px;
+
+    @include mq(desktop) {
+      margin: 0px 21px;
+    }
+  }
+}
+/*! purgecss end ignore */
+
+.hidden-slider {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 1px !important;
+  overflow: hidden;
+}

@@ -1,6 +1,6 @@
 # ПОСИЛАННЯ НА МАКЕТ
 
-🔗 https://www.figma.com/file/.....
+🔗 https://www.figma.com/file/2ChCtEq8jXKZw25m1t7Oku/online-course-Minecraft
 
 # 🥤 Starter kit for SoftRyzen
 

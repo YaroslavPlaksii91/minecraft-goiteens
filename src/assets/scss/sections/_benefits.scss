@@ -1,0 +1,52 @@
+.benefits {
+  padding-top: 12px;
+  padding-bottom: 331px;
+  background-repeat: no-repeat;
+  background-position: center bottom 33px;
+  background-size: 290px 282px;
+  background-image: url(../images/benefits/benefits-bg-mob.png);
+
+  @include mq(retina) {
+    background-image: url(../images/benefits/benefits-bg-mob@2x.png);
+  }
+
+  @supports (background-image: url(../images/benefits/benefits-bg-mob.webp)) {
+    background-image: url(../images/benefits/benefits-bg-mob.webp);
+
+    @include mq(retina) {
+      background-image: url(../images/benefits/benefits-bg-mob@2x.webp);
+    }
+  }
+
+  @include mq(tablet) {
+    padding-top: 11px;
+    padding-bottom: 43px;
+    background-size: 285px 277px;
+    background-position: top 10px left calc((100vw - 768px) / 2 + 53px);
+  }
+
+  @include mq(desktop) {
+    padding-top: 133px;
+    padding-bottom: 168px;
+    background-size: 577px 561px;
+    background-position: top 46px left calc((100vw - 1280px) / 2);
+
+    background-image: url(../images/benefits/benefits-bg-desk.png);
+
+    @include mq(retina) {
+      background-image: url(../images/benefits/benefits-bg-desk@2x.png);
+    }
+
+    @supports (background-image: url(../images/benefits/benefits-bg-desk.webp)) {
+      background-image: url(../images/benefits/benefits-bg-desk.webp);
+
+      @include mq(retina) {
+        background-image: url(../images/benefits/benefits-bg-desk@2x.webp);
+      }
+    }
+  }
+}
+
+.benefits-title {
+  text-align: left;
+}

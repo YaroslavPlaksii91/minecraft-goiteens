@@ -1,0 +1,41 @@
+.awards-item:nth-child(1) .awards-image {
+  @include mq(tablet) {
+    width: 68px;
+    height: 132px;
+  }
+
+  @include mq(desktop) {
+    width: 104px;
+    height: 200px;
+  }
+}
+
+.awards-item:nth-child(2) .awards-image {
+  width: 86px;
+  height: 109px;
+
+  @include mq(tablet) {
+    width: 118px;
+    height: 149px;
+  }
+
+  @include mq(desktop) {
+    width: 179px;
+    height: 227px;
+  }
+}
+
+.awards-item:nth-child(3) .awards-image {
+  width: 66px;
+  height: 66px;
+
+  @include mq(tablet) {
+    width: 109px;
+    height: 109px;
+  }
+
+  @include mq(desktop) {
+    width: 165px;
+    height: 166px;
+  }
+}

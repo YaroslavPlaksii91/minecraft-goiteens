@@ -4,27 +4,68 @@
 
 /* If you need to download some fonts - use this site: https://www.cufonfonts.com/ */
 @layer base {
-  // @include font-face('Montserrat', '../fonts/Montserrat-Thin', 100);
-  // @include font-face('Montserrat', '../fonts/Montserrat-ExtraLight', 200);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Light', 300);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Regular', 400);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Medium', 500);
-  // @include font-face('Montserrat', '../fonts/Montserrat-SemiBold', 600);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Bold', 700);
-  // @include font-face('Montserrat', '../fonts/Montserrat-ExtraBold', 800);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Black', 900);
+  @include font-face('Montserrat Alternates', '../fonts/MontserratAlternates-Regular', 400);
+  @include font-face('Montserrat Alternates', '../fonts/MontserratAlternates-Medium', 500);
+  @include font-face('Montserrat Alternates', '../fonts/MontserratAlternates-SemiBold', 600);
+  @include font-face('Montserrat Alternates', '../fonts/MontserratAlternates-Bold', 700);
 }
 
 body {
-  @apply bg-body font-montserrat text-black-light;
+  @apply bg-body font-montserratAlternates font-normal text-primary;
+}
+
+main {
+  overflow: hidden;
 }
 
 .section {
-  @apply py-5 md:py-8 xl:py-14;
+  @apply py-8 md:py-10 xl:py-[58px];
+}
+
+.section-title {
+  @apply text-center text-xl font-bold leading-[1.3] md:text-[24px] xl:text-[40px];
 }
 
 .btn {
-  @apply duration-300;
+  @apply flex items-center justify-center rounded-[22px] border-0 bg-green text-sm font-medium leading-[1.2] text-primary shadow-btn duration-300 hover:bg-green-hover focus:bg-green-hover md:rounded-[20px] xl:rounded-[36px] xl:text-[24px];
+}
+
+.bg-blur::before,
+.bg-blur::after {
+  content: '';
+  position: absolute;
+  width: 198px;
+  height: 198px;
+  border-radius: 198px;
+  z-index: -1;
+}
+
+.bg-blur::before {
+  left: -100px;
+  background-color: #a1ca6b;
+  filter: blur(60px);
+
+  @include mq(tablet) {
+    left: -122px;
+    width: 344px;
+    height: 344px;
+    border-radius: 344px;
+    filter: blur(105px);
+  }
+}
+
+.bg-blur::after {
+  right: -100px;
+  background-color: #db8c44;
+  filter: blur(76px);
+
+  @include mq(tablet) {
+    right: -74px;
+    width: 309px;
+    height: 309px;
+    border-radius: 309px;
+    filter: blur(132px);
+  }
 }
 
 .visually-hidden {

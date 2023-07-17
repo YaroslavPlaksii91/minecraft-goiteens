@@ -1,0 +1,235 @@
+.practice-list {
+  position: relative;
+
+  &:nth-child(1) {
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+
+      width: 135px;
+      height: 118px;
+
+      left: 50%;
+      top: 0px;
+      transform: translateX(-50%);
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      background-image: url(../images/practice/boy-sad-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/practice/boy-sad-mob@2x.png);
+      }
+      @supports (background-image: url(../images/practice/boy-sad-mob.webp)) {
+        background-image: url(../images/practice/boy-sad-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/practice/boy-sad-mob@2x.webp);
+        }
+      }
+
+      @include mq(tablet) {
+        width: 222px;
+        height: 200px;
+
+        background-image: url(../images/practice/boy-sad-tab.png);
+        @include mq(retina) {
+          background-image: url(../images/practice/boy-sad-tab@2x.png);
+        }
+        @supports (background-image: url(../images/practice/boy-sad-tab.webp)) {
+          background-image: url(../images/practice/boy-sad-tab.webp);
+          @include mq(retina) {
+            background-image: url(../images/practice/boy-sad-tab@2x.webp);
+          }
+        }
+      }
+      @include mq(desktop) {
+        width: 330px;
+        height: 290px;
+
+        background-image: url(../images/practice/boy-sad-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/practice/boy-sad-desk@2x.png);
+        }
+        @supports (background-image: url(../images/practice/boy-sad-desk.webp)) {
+          background-image: url(../images/practice/boy-sad-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/practice/boy-sad-desk@2x.webp);
+          }
+        }
+      }
+    }
+
+    .practice-card__item {
+      &:nth-child(2n + 1) {
+        @include mq(desktop) {
+          margin-left: auto;
+        }
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+
+        width: 14px;
+        height: 14px;
+
+        top: -7px;
+        right: 16px;
+
+        border-radius: 50%;
+        background-color: #777376;
+
+        background-size: 12px 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/practice/icon-done.svg);
+
+        @include mq(tablet) {
+          width: 21px;
+          height: 21px;
+
+          background-size: 17px 17px;
+        }
+        @include mq(desktop) {
+          width: 29px;
+          height: 29px;
+
+          top: -10px;
+
+          background-size: 25px 25px;
+        }
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      display: block;
+      position: absolute;
+      content: '';
+
+      width: 135px;
+      height: 118px;
+
+      left: 50%;
+      top: 0px;
+      transform: translateX(-50%);
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      background-image: url(../images/practice/boy-smile-mob.png);
+      @include mq(retina) {
+        background-image: url(../images/practice/boy-smile-mob@2x.png);
+      }
+      @supports (background-image: url(../images/practice/boy-smile-mob.webp)) {
+        background-image: url(../images/practice/boy-smile-mob.webp);
+        @include mq(retina) {
+          background-image: url(../images/practice/boy-smile-mob@2x.webp);
+        }
+      }
+
+      @include mq(tablet) {
+        width: 222px;
+        height: 200px;
+
+        background-image: url(../images/practice/boy-smile-tab.png);
+        @include mq(retina) {
+          background-image: url(../images/practice/boy-smile-tab@2x.png);
+        }
+        @supports (background-image: url(../images/practice/boy-smile-tab.webp)) {
+          background-image: url(../images/practice/boy-smile-tab.webp);
+          @include mq(retina) {
+            background-image: url(../images/practice/boy-smile-tab@2x.webp);
+          }
+        }
+      }
+      @include mq(desktop) {
+        width: 330px;
+        height: 290px;
+
+        background-image: url(../images/practice/boy-smile-desk.png);
+        @include mq(retina) {
+          background-image: url(../images/practice/boy-smile-desk@2x.png);
+        }
+        @supports (background-image: url(../images/practice/boy-smile-desk.webp)) {
+          background-image: url(../images/practice/boy-smile-desk.webp);
+          @include mq(retina) {
+            background-image: url(../images/practice/boy-smile-desk@2x.webp);
+          }
+        }
+      }
+    }
+
+    .practice-card__item {
+      &:nth-child(2n) {
+        @include mq(desktop) {
+          margin-left: auto;
+        }
+      }
+
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+
+        width: 14px;
+        height: 14px;
+
+        top: -7px;
+        right: 16px;
+
+        border-radius: 50%;
+        background-color: #78b55a;
+
+        background-size: 12px 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(../images/practice/icon-done.svg);
+
+        @include mq(tablet) {
+          width: 21px;
+          height: 21px;
+
+          background-size: 17px 17px;
+        }
+        @include mq(desktop) {
+          width: 29px;
+          height: 29px;
+
+          top: -10px;
+
+          background-size: 25px 25px;
+        }
+      }
+    }
+  }
+}
+
+.practice-card__item {
+  position: relative;
+
+  border-radius: 6px;
+  box-shadow: 0px 1.90625px 10.484375px 0px rgba(0, 0, 0, 0.16);
+
+  @media screen and (max-width: 380px) {
+    font-size: 10px;
+    letter-spacing: 0.055px;
+  }
+
+  @include mq(tablet) {
+    border-radius: 10px;
+
+    box-shadow: 0.6537798047065735px 3.2688989639282227px 16.998273849487305px 0px
+      rgba(0, 0, 0, 0.16);
+  }
+  @include mq(desktop) {
+    border-radius: 13px;
+    box-shadow: 0.8730599284172058px 4.365299701690674px 22.699556350708008px 0px
+      rgba(0, 0, 0, 0.16);
+  }
+}

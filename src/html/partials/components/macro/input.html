@@ -41,27 +41,26 @@
   {% elif arg.type == "checkbox" %}
   <label class="input-label-checkbox">
     <input
-      class="visually-hidden"
-      type="{{ arg.type }}"
-      id="{{ id }}_input_{{ arg.name }}"
-      name="{{ arg.name }}"
-      value="agree"
-      data-field="{{ arg.dataField }}"
-      {% if arg.required %} required="" {% endif %}
-    />
+    class="visually-hidden"
+    type="{{ arg.type }}"
+    id="{{ id }}_input_{{ arg.name }}"
+    name="{{ arg.name }}"
+    value="agree"
+    data-field="{{ arg.dataField }}"
+    {% if arg.required %} required="" {% endif %} />
     <span class="checkbox"></span>
     {{ arg.title }}
-    {% for link in arg.links %}
-    <a
-      class="text-accent"
-      href="{{ link.href }}"
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-    >
-      {{ link.text }}
+    <a class="text-accent" href="{{ arg.links[0].href }}" target="_blank" rel="noopener noreferrer nofollow">
+      {{ arg.links[0].text }}
     </a>
-    {% if not loop.last %} <br> {{ arg.linkSeparator }} {% endif %}
-    {% endfor %}
+
+    {{ arg.linkSeparator }}
+
+    {% if arg.links[1].text %}
+      <a class="text-accent" href="{{ arg.links[1].href }}" target="_blank" rel="noopener noreferrer nofollow">
+        {{ arg.links[1].text }}
+      </a>
+    {% endif %}
   </label>
 
   <!-- ELSE -->

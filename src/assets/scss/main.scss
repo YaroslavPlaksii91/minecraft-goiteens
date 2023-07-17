@@ -7,10 +7,30 @@
 
 @import 'utils/mixins';
 @import 'vendors/tailwind';
+@import 'vendors/slick';
+@import 'vendors/slick-theme';
 
 @import 'components/input';
 @import 'components/form';
 @import 'components/modal';
+@import 'components/label';
 // @import 'components/mobile-menu';
 
 @import 'sections/header';
+@import 'sections/hero';
+@import 'sections/info';
+@import 'sections/benefits';
+@import 'sections/programming';
+@import 'sections/introduction';
+@import 'sections/lesson';
+@import 'sections/details';
+@import 'sections/practice';
+@import 'sections/course';
+@import 'sections/studying';
+@import 'sections/teachers';
+@import 'sections/reviews';
+@import 'sections/choice';
+@import 'sections/offers';
+@import 'sections/awards';
+@import 'sections/questions';
+@import 'sections/future';

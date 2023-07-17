@@ -3,6 +3,8 @@ build
 
 # Ignore input file from html:
 src/html/partials/components/macro/input.html
+src/html/partials/components/formFields.njk
+src/html/pages/index.html
 
 # Ignore app folder:
 src/app/**

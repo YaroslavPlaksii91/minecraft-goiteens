@@ -10,7 +10,7 @@ function send($token, $data, $input)
 {
   $ch = curl_init();
   $curl_options = [];
-  $url = 'Put your connector from the list below';
+  $url = 'https://universalcrmconnector.goiteens.ua/connector.php';
 /*
 // UA
 // https://goit-connectors.place/goit/

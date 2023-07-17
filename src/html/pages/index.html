@@ -1,7 +1,26 @@
-{% extends 'layout.html' %} {% block content %} {% include 'sections/header.html' %}
+{% extends 'layout.html' %}
+{% block content %}
+{% include 'sections/header.html' %}
 
 <main>
-  <!--  -->
+  {% include 'sections/hero.html' %}
+  {% include 'sections/info.html' %}
+  {% include 'sections/benefits.html' %}
+  {% include 'sections/programming.html' %}
+  {% include 'sections/introduction.html' %}
+  {% include 'sections/lesson.html' %}
+  {% include 'sections/details.html' %}
+  {% include 'sections/practice.html' %}
+  {% include 'sections/course.html' %}
+  {% include 'sections/studying.html' %}
+  {% include 'sections/teachers.html' %}
+  {% include 'sections/reviews.html' %}
+  {% include 'sections/choice.html' %}
+  {% include 'sections/offers.html' %}
+  {% include 'sections/awards.html' %}
+  {% include 'sections/questions.html' %}
+  {% include 'sections/future.html' %}
 </main>
 
-{% include 'sections/footer.html' %} {% endblock %}
+{% include 'sections/footer.html' %}
+{% endblock %}
